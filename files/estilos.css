@@ -1,0 +1,19 @@
+*{
+  margin: 0px
+  padding: 0px
+}
+
+#cabecera {
+  font-size: 64px;
+  text-align:center;
+}
+#menu {
+  font-size: 32px;
+  text-align:center;
+}
+#cuerpo {
+  font-size: 50px;
+}
+#pie {
+  font-size:  12px;
+}
