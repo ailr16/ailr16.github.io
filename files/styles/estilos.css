@@ -58,10 +58,20 @@ body {
   .card-wide {
     grid-column: span 2 / auto;
   }
+
+  .card-ultrawide {
+    grid-column: span 3 / auto;
+  }
 }
 
 #elementos{
     cursor:pointer;
+    text-align: center;
+}
+#elementos2{
+  color: #544A48;
+  cursor:pointer;
+  text-align: center;
 }
 #headerPerfil{
   font-family: Calibri, Candara, Arial, sans-serif;
@@ -80,12 +90,17 @@ body {
   width: 30vh;
   height: 30vh;
 }
-#rotarTexto{
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-}
-#projectImg{
+#socialIcon{
   margin: auto;
-  width: 60vh;
-  height: 40vh;
+  width: 7.4vh;
+  height: 7.4vh;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: white;
+  text-align: center;
 }
