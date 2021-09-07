@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 .main,
 .sidebar {
   border-radius: 20px;
@@ -10,27 +9,21 @@
   padding: 0px;
   background-color: #fff;
 }
-
 .main {
   text-align: center;
   width: 70%;
   height: 150vh;
 }
-
-.sidebar {
-  width: 28%;
-  height: 96vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 body {
   background-color: #fff;
   font-family: sans-serif;
   padding: 0px;
 }
-
+#columna1{
+    border: 1px solid blue;
+    width: 3%;
+    word-wrap: break-word;
+}
 #headerPerfil{
   font-family: Calibri, Candara, Arial, sans-serif;
   text-align: center;
@@ -48,5 +41,12 @@ body {
   width: 30vh;
   height: 30vh;
 }
-#contenido{
+#rotarTexto{
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+#projectImg{
+  margin: auto;
+  width: 60vh;
+  height: 40vh;
 }
