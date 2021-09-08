@@ -104,3 +104,13 @@ body {
   color: white;
   text-align: center;
 }
+#descripcion{
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 120%;
+  font-family: Calibri, Candara, Arial, sans-serif;
+}
+#mediaImg{
+  width: 40vw;
+  border-radius: 2vw;
+}
