@@ -5,7 +5,3 @@
 <!-- wp:paragraph -->
 <p>RewriteCond %{REQUEST_FILENAME} !-d<br>RewriteCond %{REQUEST_FILENAME}.php -f<br>RewriteRule ^(.*)$ $1.php</p>
 <!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>RewriteCond %{REQUEST_FILENAME} !-d<br>RewriteCond %{REQUEST_FILENAME}.jpg -f<br>RewriteRule ^(.*)$ $1.jpg</p>
-<!-- /wp:paragraph -->
