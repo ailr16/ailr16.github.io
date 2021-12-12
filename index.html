@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!--Angel Ivan Lozano Ramirez
-			Hidalgo,Mexico
+		Hidalgo,Mexico
 	-->
 	<head>
 		<meta charset="utf-8"/>
@@ -11,55 +11,108 @@
 
 		<title>		ailr16		</title>
 		<script src="files/scripts/script.js"></script>
-
+	
 		<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="files/styles/estilos.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
-<header id="headerPerfil">
-	ailr16
-</header>
-<body>
-<img id="imgPerfil" src="Images/avatar.png">
-<p id="nombrePerfil">Angel Iván Lozano Ramírez</p>
-<div class="image-mosaic">
-  <div
-    class="card card-tall card-wide"
-    style="background-image: url('Images/hand.jpg')"
-		onclick="location.href='inmoov&neurosky';"
-		id = "elementos"
-  >InMoov Hand </br>& </br>Neurosky Mindwave</div>
-  <div
-    class="card card-tall"
-    style="background-image: url('Images/scope.jpg')"
-		onclick="location.href='BodePlotter';"
-		id = "elementos"
-  >Bode</br> plotter</div>
-	<div
-		class="card card-tall card-wide"
-		style="background-image: url('Images/pollutionM.jpg')"
-		onclick="location.href='monitoreo';"
-		id = "elementos"
-	>Monitoreo </br>de </br>contaminacion</div>
-	<div
-    class="card card-ultrawide"
-    style="background-image: url('Images/ender3.jpg')"
-		onclick="location.href='i3d';"
-		id = "elementos"
-  >3D</br>Printing</div>
-	<div
-    class="card card-wide"
-    style="background-image: url('Images/spotmicro.jpg')"
-		onclick="location.href='spotmicro';"
-		id = "elementos2"
-  >SpotMicro</div>
-</div>
-</body>
-<div class="footer">
-	</br>
-  <a href="https://www.linkedin.com/in/ailr16/" target="_blank"><img id="socialIcon" src="Images/linkedin.png" ></a>
-	<a href="https://www.youtube.com/channel/UCJ5MFm2qRBsL5Vf8Yft5vpw" target="_blank"><img id="socialIcon" src="Images/yt.png" ></a>
-	<a href="https://www.facebook.com/ailr16" target="_blank"><img id="socialIcon" src="Images/fb.png" ></a>
-	<a href="https://github.com/ailr16" target="_blank"><img id="socialIcon" src="Images/gh.png" ></a>
-</div>
+	<style>
+		.html,body{
+			 height:100vh;
+		}
+		body{
+			background: linear-gradient( rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64) ),url(Images/bg.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-color: rgba(89, 38, 155, 0.527);
+		}
+		#lorem{
+			width: 90%;
+			margin: auto;
+			padding: 10px;
+		}
+		a{
+			color: #FFF;
+			text-decoration: none;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 60%;
+			text-align: center;
+		}
+		p{
+			text-align: justify;
+		}
+		header{
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			text-align: center;
+			font-size: 8.4vh;
+		}
+		footer{
+			text-align: center;
+		}
+		.circular{
+			width: 24vh;
+			height: 24vh;
+			border-radius: 50%;
+		}
+		.articleLeft{
+			position: relative;
+			left: 12vw;
+			
+		}
+		#titleLeft{
+			text-align: left;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 4vh;
+		}
+		#textLeft{
+			text-align: left;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
+		}
+		.articleRight{
+			position: relative;
+			right: 10vw;
+			
+		}
+		#tituloDe{
+			text-align: right;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 150%;
+		}
+		</style>
+	<header data-aos="fade-down" data-aos-once="false">
+		ailr16
+		<br>
+		<img class="circular" src="Images/avatar.png"/>
+	</header>
+
+	<body>
+		<article class="articleLeft" data-aos="fade-right" data-aos-delay="1000">
+			<p id="titleLeft">About Me</p>
+			<p id="textLeft">Hello, I am an Electronics and<br>
+				Communications Engineer and<br>
+				Mechatronics Technician. I've<br>
+				studied at National Polytechnic<br>
+				Institute (IPN) in Mexico.</p>
+		</article>
+		<article class="articleRight" data-aos="fade-left" data-aos-delay="1000">
+			<p id="tituloDe">My projects</p>
+		</article>
+		<article class="articleLeft" data-aos="fade-right" data-aos-delay="1000">
+			<p id="titleLeft">Contact</p>
+		</article>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 		<script>
+ 			AOS.init();
+ 		</script>
+	</body>
+	<footer>
+		<a data-aos="fade-up" data-aos-delay="1500" href="https://www.freepik.com/photos/background">Background photo created by BiZkettE1 - www.freepik.com</a>
+	</footer>>
 </html>
