@@ -18,7 +18,7 @@
 	</head>
 	<style>
 		.html,body{
-			 height:100vh;
+			 width: 97.8vw;
 		}
 		body{
 			background: linear-gradient( rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64) ),url(Images/bg.jpg);
@@ -51,6 +51,8 @@
 		}
 		footer{
 			text-align: center;
+			position: relative;
+			top: 10vh;
 		}
 		.circular{
 			width: 24vh;
@@ -60,7 +62,22 @@
 		.articleLeft{
 			position: relative;
 			left: 12vw;
-			
+		}
+		.articleCenter{
+			position: relative;
+			text-align: center;
+		}
+		#titleCenter{
+			text-align: center;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 4vh;
+		}
+		#textCenter{
+			text-align: center;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
 		}
 		#titleLeft{
 			text-align: left;
@@ -77,7 +94,6 @@
 		.articleRight{
 			position: relative;
 			right: 10vw;
-			
 		}
 		#titleRight{
 			text-align: right;
@@ -91,39 +107,48 @@
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			font-size: 2.2vh;
 		}
+		#image{
+			height: 20vh;
+			border-radius: 4%;
+		}
 		</style>
-	<header data-aos="fade-down" data-aos-delay="600">
+	<header data-aos="fade-down" data-aos-delay="300">
 		ailr16
 		<br>
 		<img class="circular" src="Images/avatar.png"/>
 	</header>
 
 	<body>
-		<article class="articleLeft" data-aos="fade-right" data-aos-delay="1200">
-			<p id="titleLeft">About Me</p>
-			<p id="textLeft">Hello, I am an Electronics and<br>
-				Communications Engineer and<br>
-				Mechatronics Technician. I've<br>
-				studied at National Polytechnic<br>
+		<article class="articleCenter" data-aos="fade-down" data-aos-delay="400">
+			<p id="titleCenter">About Me</p>
+			<p id="textCenter">Hello, I am an Electronics and Communications Engineer and<br>
+				Mechatronics Technician. I've studied at National Polytechnic<br>
 				Institute (IPN) in Mexico.</p>
 		</article>
-		<article class="articleRight" data-aos="fade-left" data-aos-delay="1800">
-			<p id="titleRight">My projects</p>
+
+		<article class="articleCenter" data-aos="fade-up" data-aos-delay="400">
+			<p id="titleCenter">My projects</p>
+			<img id="image" src="Images/scope.jpg">
+			<img id="image" src="Images/hand.jpg">
+			<img id="image" src="Images/pollution.png">
+			<img id="image" src="Images/ender3.jpg">
+			<img id="image" src="Images/spotmicro.png">
 		</article>
-		<article class="articleLeft" data-aos="fade-right" data-aos-delay="2400">
-			<p id="titleLeft">Certificates</p>
-			<p id="textLeft">SolidWorks Associate<br>
-				Microsoft Azure Fundamentals<br>
+		
+		<article class="articleCenter" data-aos="fade-up" data-aos-delay="200">
+			<p id="titleCenter">Contact & Social Media</p>
+			<p id="textCenter">
+				LinkedIn<br>
+				YouTube<br>
+				GitHub</p>
 		</article>
-		<article class="articleRight" data-aos="fade-left" data-aos-delay="3000">
-			<p id="titleRight">Contact</p>
-		</article>
+
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  		<script>
  			AOS.init();
  		</script>
 	</body>
-	<footer data-aos="fade-up">
+	<footer>
 		<a href="https://www.freepik.com/photos/background">Background photo created by BiZkettE1 - www.freepik.com</a>
 	</footer>>
 </html>
