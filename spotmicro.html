@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<!--Angel Ivan Lozano Ramirez
-			Hidalgo,Mexico
+		Hidalgo,Mexico
 	-->
 	<head>
 		<meta charset="utf-8"/>
@@ -10,28 +10,154 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>SpotMicro</title>
-
+		<script src="files/scripts/script.js"></script>
+	
 		<link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="files/styles/estilos.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
-  <header id="headerPerfil">SpotMicro</header>
-  <body>
-      <div id="descripcion"></br>
-        I'm working in this project.</br>
-        Its based on another Open Source project:</br>
-        https://github.com/michaelkubina/SpotMicroESP32</br>
-        but I'll try controlling with a Raspberry Pi 4B.</br>
-        I've started with 3D printing the pieces.</br></br>
-        Media:</br>
-				<a href="https://raw.githubusercontent.com/ailr16/ailr16.github.io/master/Images/spotmicro.jpg" target="_blank">
-	        <img id="mediaImg"
-	          src="Images/spotmicro.jpg"
-	          alt="3D render of the robot"
-	          >
+	<style>
+		.html,body{
+			 width: 97.8vw;
+		}
+		body{
+			background: linear-gradient( rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64) ),url(Images/bg.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-color: rgba(89, 38, 155, 0.527);
+		}
+		#lorem{
+			width: 90%;
+			margin: auto;
+			padding: 10px;
+		}
+		a{
+			color: #FFF;
+			text-decoration: none;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 60%;
+			text-align: center;
+		}
+		p{
+			text-align: justify;
+		}
+		header{
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			text-align: center;
+			font-size: 8.4vh;
+		}
+		footer{
+			text-align: center;
+			position: relative;
+			top: 10vh;
+			font-size: 1.5vh;
+		}
+		.circular{
+			width: 24vh;
+			height: 24vh;
+			border-radius: 50%;
+		}
+		.articleLeft{
+			position: relative;
+			left: 12vw;
+		}
+		.articleCenter{
+			position: relative;
+			text-align: center;
+			align-content: center;
+		}
+		#titleCenter{
+			text-align: center;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 4vh;
+		}
+		#textCenter{
+			text-align: center;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
+		}
+		#textCenter2{
+			text-align: center;
+			color:rgb(29, 150, 99);
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
+		}
+		#titleLeft{
+			text-align: left;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 4vh;
+		}
+		#textLeft{
+			text-align: left;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
+		}
+		.articleRight{
+			position: relative;
+			right: 10vw;
+		}
+		#titleRight{
+			text-align: right;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 4vh;
+		}
+		#textRight{
+			text-align: right;
+			color:#FFF;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 2.2vh;
+		}
+		#image{
+			height: 20vh;
+			border-radius: 4%;
+		}
+		#social{
+			height: 5vh;
+			border-radius: 4%;
+		}
+		
+	</style>
+	<header data-aos="fade-down" data-aos-delay="300" data-aos-once="true">
+		SpotMicro
+	</header>
+
+	<body>
+		<article class="articleCenter" data-aos="fade-down" data-aos-delay="400">
+			<p id="titleCenter">About the project</p>
+			<p id="textCenter">I'm working in this project.</br>
+				Its based on another Open Source project:</br>
+				https://github.com/michaelkubina/SpotMicroESP32</br>
+				but I'll try controlling with a Raspberry Pi 4B.</br>
+				I've started with 3D printing the pieces.</br>
+		</article>
+
+		<article class="articleCenter" data-aos="fade-up" data-aos-delay="400">
+			<p id="titleCenter">Media and Info</p>
+			<a href="https://raw.githubusercontent.com/ailr16/ailr16.github.io/master/Images/spotmicro.png" target="_blank">
+				<img id="image"
+				  src="Images/spotmicro.png"
+				  alt="3D render of the robot">
 				</a>
-			</br>
-				<a href="index">Return</a>
-      </div>
-  </body>
-  </html>
+			<p id="textCenter"> Project repository: <a href="https://github.com/ailr16/InMoov-Control---AILR" target="_blank">InMoov-Control---AILR</a></p>
+		</article>
+		<article class="articleCenter" data-aos="fade-up" data-aos-once="true">
+			<a href="index.html" id="textCenter2"><--RETURN</a>
+		</article>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 		<script>
+ 			AOS.init();
+ 		</script>
+	</body>
+	<footer>
+		<a href="https://www.freepik.com/photos/background">Background photo created by BiZkettE1 - www.freepik.com</a>
+	</footer>>
+</html>
