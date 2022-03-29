@@ -11,6 +11,11 @@ body{
  background-color: rgba(89, 38, 155, 0.527);
 }
 
+#lorem{
+ width: 90%;
+ margin: auto;
+ padding: 10px;
+}
 
 a{
  color: #FFF;
@@ -47,7 +52,7 @@ footer{
 .article_bio{
  position: relative;
  text-align: left;
- left: 12vw;
+ left: 16vw;
  width: 32vw;
 }
 
@@ -59,6 +64,7 @@ footer{
   width: 32vw;
  }
  
+
 .article_right{
   position: relative;
   right: 10vw;
