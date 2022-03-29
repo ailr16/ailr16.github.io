@@ -1,5 +1,6 @@
 .html,body{
   width: 97.8vw;
+  scroll-behavior: smooth; 
 }
 
 #lorem{
@@ -134,4 +135,97 @@ footer{
 .social_nets{
   align-items: center;
   text-align: center;
+}
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-38vw); }
+	30% { transform: translateX(-38vw); }
+
+	35% { transform: translateX(-76vw) }
+	50% { transform: translateX(-76vw); }
+
+	55% { transform: translateX(-114vw); }
+	70% { transform: translateX(-114vw); }
+
+	75% { transform: translateX(-152vw); }
+	90% { transform: translateX(-152vw); }
+
+	95% { transform: translateX(-190vw); }
+	100% { transform: translateX(-190vw); }
+}
+
+* { box-sizing: border-box; }
+
+.wrapper {
+  position: relative;
+	max-width: 34vw;
+  left: 47vw;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 34vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 24s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 34vw;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 2vw;
+	position: absolute;
+	top: 1vw;
+	right: 2vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 34vw;
+	}
+
+	.caption {
+		font-size: 2vw;
+		top: 1vw;
+		right: 2vw;
+	}
 }
