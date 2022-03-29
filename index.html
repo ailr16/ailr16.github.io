@@ -37,7 +37,7 @@
 	</header>
 
 	<body>
-		<article class="article_bio" data-aos="fade-right" data-aos-delay="512">
+		<div class="article_bio" data-aos="fade-right" data-aos-delay="512">
 			<p class="title_left">
 				<mark class="mark_text">BIO</mark>
 	
@@ -48,48 +48,51 @@
 					Institute (IPN) in Mexico <img class="flag" src="./files/img/mexicoFlag.gif">
 				</mark>
 			</p>
-		</article>
 
-		<div class="wrapper">
-			<div class="slider" id="slider">
-			  <ul class="slides">
-				<li class="slide" id="slide1">
-					<p class="caption">VEX Toss Up 2013</p>
-					<img src="./files/img/slider1/vexBall.JPG" alt="photo 1">
-				</li>
-				<li class="slide" id="slide2">
-					<p class="caption">Texto llamativo</p>
-					<img src="./files/img/bg.jpg" alt="photo 2">
-				</li>
-				<li class="slide" id="slide3">
-				  <a href="#">
-					<p class="caption">Texto llamativo</p>
-					<img src="./files/img/ender3.jpg" alt="photo 3">
-				  </a>
-				</li>
-				<li class="slide" id="slide4">
-				  <a href="#">
-					<p class="caption">Texto llamativo</p>
-					<img src="./files/img/gifearth.gif" alt="photo 4">
-				  </a>
-				</li>
-				<li class="slide" id="slide5">
-				  <a href="#">
-					 <p class="caption">Texto llamativo</p>
-					 <img src="./files/img/hand.jpg" alt="photo 5">
-				  </a>
-				</li>
-				<li class="slide">
-				  <a href="#">
-					<p class="caption">Texto llamativo</p>
-					<img src="./files/img/pollution.png" alt="photo 1">
-				  </a>
-				</li>
-			  </ul>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="./files/img/slider1/vexBall.JPG" style="width:100%">
+					<div class="text">
+						<mark class="mark_text">
+							VEX Toss Up 2013
+						</mark>
+					</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">2 / 3</div>
+					<iframe class="video" src="https://www.youtube.com/embed/jXCSVh1KY0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="text">
+						<mark class="mark_text">
+							VEX Toss Up 2013
+						</mark>
+					</div>
+				</div>
+			
+				<div class="mySlides fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="./files/img/slider1/vexBall.JPG" style="width:100%">
+					<div class="text">
+						<mark class="mark_text">
+							VEX Toss Up 2013
+						</mark>
+					</div>
+				</div>
+			
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<div style="position: relative; left: 40vw; top: -10vh; text-align:center; margin-top: -1vh;">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 		</div>
 
-		<article class="article_projects" data-aos="fade-right" data-aos-delay="512">
+		<div class="article_projects" data-aos="fade-right" data-aos-delay="512">
 			<p class="title_left">
 				<mark class="mark_text">
 					Projects
@@ -110,16 +113,16 @@
 			<a title="Pollution Monitor" href="monitoreo.html"><img class="image" src="./files/img/pollution.png"></a>
 			<a title="3d Printing projects" href="i3d.html"><img class="image" src="./files/img/ender3.jpg"></a>
 			<a title="SpotMicro" href="spotmicro.html"><img class="image" src="./files/img/spotmicro.png"></a>
-		</article>
+		</div>
 		
-		<article class="social_nets" data-aos="fade-up" data-aos-delay="128">
+		<div class="social_nets" data-aos="fade-up" data-aos-delay="128">
 			<p class="title_center">
 				<mark class="mark_text">Contact & Social Media</mark>
 			</p><br>
 			<a title="LinkedIn" href="http://www.linkedin.com/in/ailr16/" target="_blank"><img class="social" src="./files/img/linkedin.png"></a>
 			<a title="YouTube" href="https://www.youtube.com/channel/UCJ5MFm2qRBsL5Vf8Yft5vpw" target="_blank"><img class="social" src="./files/img/yt.png"></a>
 			<a title="GitHub" href="https://github.com/ailr16" target="_blank"><img class="social" src="./files/img/gh.png"></a>
-		</article>
+		</div>
 
 		<script src="./files/scripts/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
