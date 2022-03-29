@@ -52,18 +52,17 @@ footer{
 .article_bio{
  position: relative;
  text-align: left;
- left: 16vw;
- width: 32vw;
+ left: 12vw;
+ width: 34vw;
 }
 
 .article_projects{
   margin-top: 6vh;
   position: relative;
   text-align: left;
-  left: 16vw;
-  width: 32vw;
+  left: 12vw;
+  width: 34vw;
  }
- 
 
 .article_right{
   position: relative;
@@ -84,7 +83,7 @@ footer{
   text-align: left;
   color:#FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.6vh;
+  font-size: 3.4vh;
   font-style: italic;
   margin-bottom: -1.4vh;
  }
@@ -100,7 +99,7 @@ footer{
  text-align: left;
  color:#FFF;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
- font-size: 1.8vh;
+ font-size: 2.2vh;
  margin-bottom: -1.4vh;
 }
 
