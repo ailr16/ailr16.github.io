@@ -19,9 +19,8 @@ body{
 
 a{
  color: #FFF;
- text-decoration: none;
+ text-decoration:underline;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
- font-size: 60%;
  text-align: center;
 }
 
