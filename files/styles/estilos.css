@@ -2,15 +2,6 @@
   width: 97.8vw;
 }
 
-body{
- background: linear-gradient( rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64) ),url(./files/img/bg.jpg);
- background-position: center center;
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
- background-color: rgba(89, 38, 155, 0.527);
-}
-
 #lorem{
  width: 90%;
  margin: auto;
@@ -38,8 +29,8 @@ header{
 footer{
  text-align: center;
  position: relative;
- top: 10vh;
- font-size: 1.5vh;
+ top: 6vh;
+ font-size: 1vh;
 }
 
 .img_profile{
@@ -86,6 +77,15 @@ footer{
   font-style: italic;
   margin-bottom: -1.4vh;
  }
+
+ .title_center{
+  text-align: center;
+  color:#FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.4vh;
+  font-style: italic;
+  margin-bottom: -1.4vh;
+ }
  
 .text_center{
  text-align: center;
@@ -120,6 +120,17 @@ footer{
 }
 
 .social{
+ position: relative;
  height: 5vh;
  border-radius: 4%;
+ margin-left: 1vw;
+}
+
+.flag{
+  height: 2.2vh;
+}
+
+.social_nets{
+  align-items: center;
+  text-align: center;
 }
