@@ -127,7 +127,8 @@ footer{
 }
 
 .flag{
-  height: 2.2vh;
+  position: relative;
+  height: 1vw;
 }
 
 .social_nets{
