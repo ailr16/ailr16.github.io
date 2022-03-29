@@ -163,6 +163,7 @@ footer{
   position: relative;
 	max-width: 34vw;
   left: 47vw;
+  bottom: 13vh;
 }
 
 .slider {
@@ -191,6 +192,7 @@ footer{
 .slide img {
 	width: 34vw;
 	vertical-align: top;
+  border-radius: 4%;
 }
 
 .slide a {
