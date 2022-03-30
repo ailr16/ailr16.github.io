@@ -46,6 +46,7 @@ footer{
  left: 12vw;
  width: 34vw;
  margin-bottom: -10vh;
+ margin-top: 6vh;
 }
 
 .article_projects{
@@ -78,7 +79,7 @@ footer{
   font-size: 3.4vh;
   font-style: italic;
   margin-bottom: -1.4vh;
- }
+}
 
  .title_center{
   text-align: center;
@@ -230,6 +231,29 @@ footer{
 	height: 19vw;
 }
 
-@media screen and (max-width: 479px) {
-	
+@media screen and (max-width: 560px) {
+  .article_bio{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 60vw;
+    margin-top: 6vh;
+   }
+   
+	.slideshow-container {
+    width: 54vw;
+    position: relative;
+    margin: auto;
+    left: 12vw;
+    top: 12vh;
+  }
+
+  .article_projects{
+    margin-top: 10vh;
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 34vw;
+   }
+  
 }
