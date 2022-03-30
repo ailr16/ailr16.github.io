@@ -144,10 +144,10 @@ footer{
 }
 
 .slideshow-container {
-  max-width: 1000px;
+  width: 34vw;
   position: relative;
   margin: auto;
-  left: 40vw;
+  left: 21vw;
   top: -10vh;
 }
 
@@ -185,8 +185,8 @@ footer{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2vh;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 16vh;
+  position: relative;
+  bottom: 4vh;
   width: 100%;
   text-align: center;
   font-style: italic;
@@ -226,6 +226,14 @@ footer{
   to {opacity: 1}
 }
 
+.menu_dot{
+  position: relative;
+  left: 21vw;
+  top: -12vh;
+  text-align:center;
+  margin-top: -1vh;
+}
+
 .video{
 	width: 34vw;
 	height: 19vw;
@@ -241,11 +249,11 @@ footer{
    }
    
 	.slideshow-container {
-    width: 54vw;
+    width: 56vw;
     position: relative;
     margin: auto;
-    left: 12vw;
-    top: 12vh;
+    left: 10vw;
+    top: 13vh;
   }
 
   .article_projects{
@@ -255,5 +263,17 @@ footer{
     left: 12vw;
     width: 34vw;
    }
-  
+
+   .menu_dot{
+    position: relative;
+    left: 10vw;
+    top: 8.4vh;
+    text-align:center;
+    margin-top: -1vh;
+  }
+
+  .video{
+    width: 56vw;
+    height: 31.4vw;
+  }
 }
