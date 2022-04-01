@@ -32,7 +32,7 @@ header{
 footer{
  text-align: center;
  position: relative;
- top: 6vh;
+ top: -2vh;
  font-size: 1vh;
 }
 
@@ -169,7 +169,7 @@ footer{
   position: relative;
   align-items: center;
   text-align: center;
-  top: 4vh;
+  top: -12vh;
 }
 
 *{
