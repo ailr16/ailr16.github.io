@@ -57,6 +57,7 @@ footer{
   text-align: left;
   left: 12vw;
   width: 36vw;
+  top: 3vh;
 }
 
 .article_certificates{
@@ -64,7 +65,7 @@ footer{
   text-align: right;
   width: 34vw;
   right: -52.7vw;
-  top: 8vh;
+  top: -14vh;
 }
  
 .title_ailr16{
@@ -167,7 +168,19 @@ footer{
   top: -10vh;
 }
 
-.mySlides {
+.slideshow-container2 {
+  width: 34vw;
+  position: relative;
+  margin: auto;
+  left: 21vw;
+  top: -21vh;
+}
+
+.mySlides1 {
+  display: none;
+}
+
+.mySlides2 {
   display: none;
 }
 
@@ -243,7 +256,7 @@ footer{
 
 .c_badges{
   position: relative;
-  top: -6.6vh;
+  top: -30vh;
   left: 12vw;
   width: 34vw;
   text-align: center;
@@ -294,16 +307,25 @@ footer{
     text-align: left;
     top: 8vh;
     left: 12vw;
-    width: 34vw;
+    width: 64vw;
    }
+
+   .slideshow-container2 {
+    width: 56vw;
+    position: relative;
+    margin: auto;
+    left: 10vw;
+    top: 5vh;
+  }
 
    .article_certificates{
     position: relative;
     text-align: right;
     width: 64vw;
     right: -23.8vw;
-    top: 5vh;
+    top: 9vh;
   }
+
    .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -336,7 +358,7 @@ footer{
 
   .c_badges{
     position: relative;
-    top: 6vh;
+    top: 9.2vh;
     left: 11vw;
     width: 64vw;
     text-align: center;
@@ -345,4 +367,18 @@ footer{
   .badges{
     width: 24vw;
   }
+
+  .social_nets{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 10vh;
+  }
+
+  footer{
+    text-align: center;
+    position: relative;
+    top: 14vh;
+    font-size: 1vh;
+   }
 }
