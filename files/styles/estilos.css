@@ -60,6 +60,22 @@ footer{
   top: 3vh;
 }
 
+.article_individual{
+  position: relative;
+  text-align: left;
+  left: 12vw;
+  width: 36vw;
+  top: 4vh;
+}
+
+.article_center{
+  text-align: center;
+  position: relative;
+  top: 6vh;
+  left: 12vw;;
+  width: 34vw;
+}
+
 .article_certificates{
   position: relative;
   text-align: right;
@@ -68,7 +84,7 @@ footer{
   top: -14vh;
 }
  
-.title_ailr16{
+.title_page{
   color:#FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -87,14 +103,14 @@ footer{
   margin-bottom: -1.4vh;
 }
 
- .title_center{
+.title_center{
   text-align: center;
   color:#FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3.4vh;
   font-style: italic;
   margin-bottom: -1.4vh;
- }
+}
 
 .title_right{
   text-align: right;
@@ -125,7 +141,7 @@ footer{
   color:#FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
- }
+}
 
 .mark_text{
   background-color: rgba(105, 105, 105, 0.575);
@@ -282,6 +298,11 @@ footer{
 	height: 19vw;
 }
 
+.video_individual{
+	width: 28vw;
+	height: 19vw;
+}
+
 @media screen and (max-width: 560px) {
   .article_bio{
     position: relative;
@@ -381,4 +402,17 @@ footer{
     top: 14vh;
     font-size: 1vh;
    }
+
+   .video_individual{
+    width: 60vw;
+    height: 33.5vw;
+  }
+
+  .article_individual{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 64vw;
+    top: 4vh;
+  }
 }
