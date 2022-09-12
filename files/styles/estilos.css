@@ -36,6 +36,15 @@ footer{
  font-size: 1vh;
 }
 
+.name{
+  color:#FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  margin-top: -2vh;
+  margin-bottom: 3vh;
+}
+
 .img_profile{
  width: 24vh;
  border-radius: 100%;
@@ -45,10 +54,10 @@ footer{
  position: relative;
  text-align: left;
  left: 12vw;
- top: 10vh;
+ top: 14vh;
  width: 34vw;
- margin-bottom: -9vh;
- margin-top: -6vh;
+ margin-bottom: -0vh;
+ margin-top: -3vh;
 }
 
 .article_projects{
@@ -57,7 +66,7 @@ footer{
   text-align: left;
   left: 12vw;
   width: 36vw;
-  top: 3vh;
+  top: -4vh;
 }
 
 .article_individual{
@@ -66,6 +75,16 @@ footer{
   left: 12vw;
   width: 36vw;
   top: 4vh;
+  bottom: 16vh;
+}
+
+.article_individual_repo{
+  position: relative;
+  text-align: left;
+  left: 12vw;
+  width: 36vw;
+  top: 6vh;
+  bottom: 24vh;
 }
 
 .article_center{
@@ -76,12 +95,28 @@ footer{
   width: 34vw;
 }
 
+.article_education{
+  position: relative;
+  text-align: right;
+  width: 34vw;
+  right: -52.7vw;
+  top: -4vh;
+}
+
+.c_schools{
+  position: relative;
+  top: -20vh;
+  left: 12vw;
+  width: 34vw;
+  text-align: center;
+}
+
 .article_certificates{
   position: relative;
   text-align: right;
   width: 34vw;
   right: -52.7vw;
-  top: -14vh;
+  top: -18vh;
 }
  
 .title_page{
@@ -169,7 +204,7 @@ footer{
   position: relative;
   align-items: center;
   text-align: center;
-  top: -12vh;
+  top: -20vh;
 }
 
 *{
@@ -189,7 +224,7 @@ footer{
   position: relative;
   margin: auto;
   left: 21vw;
-  top: -21vh;
+  top: -32vh;
 }
 
 .mySlides1 {
@@ -272,10 +307,14 @@ footer{
 
 .c_badges{
   position: relative;
-  top: -30vh;
+  top: -34vh;
   left: 12vw;
   width: 34vw;
   text-align: center;
+}
+
+.schools{
+  height: 20vh;
 }
 
 @keyframes fade {
@@ -319,6 +358,26 @@ footer{
     margin: auto;
     left: 10vw;
     top: 13vh;
+  }
+
+  .article_education{
+    position: relative;
+    text-align: right;
+    width: 64vw;
+    right: -23.8vw;
+    top: 9vh;
+  }
+
+  .c_schools{
+    position: relative;
+    top: 9.2vh;
+    left: 11vw;
+    width: 64vw;
+    text-align: center;
+  }
+
+  .schools{
+    height: 20vh;
   }
 
   .article_projects{
@@ -394,12 +453,13 @@ footer{
     align-items: center;
     text-align: center;
     top: 10vh;
+    bottom: 16vh;
   }
 
   footer{
     text-align: center;
     position: relative;
-    top: 14vh;
+    top: 10vh;
     font-size: 1vh;
    }
 
@@ -414,5 +474,13 @@ footer{
     left: 12vw;
     width: 64vw;
     top: 4vh;
+  }
+  .article_individual_repo{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 64vw;
+    top: 4vh;
+    bottom: 16vh;
   }
 }
