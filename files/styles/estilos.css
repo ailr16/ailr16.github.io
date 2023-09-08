@@ -45,6 +45,23 @@ footer{
   margin-bottom: 3vh;
 }
 
+.imgAtrib{
+    color:#FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2vh;
+  }
+
+  .igText{
+    color:#FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+  }
+
 .img_profile{
  width: 22vh;
  border-radius: 100%;
