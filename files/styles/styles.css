@@ -1,57 +1,110 @@
 .html,body{
   scroll-behavior: smooth;
-  overflow-x:   hidden;
-  margin-left:  auto;
-  margin-right: auto;
+  overflow-x:      hidden;
+  margin-left:     auto;
+  margin-right:    auto;
 }
 
 a{
   color: #FFF;
-  text-decoration:underline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
- }
+}
  
-.Profile_container{
-  width: 50%;
-  margin-left: 15%;
+header{
+  color:#FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 7vh;
+  display: flex;
 }
 
-.Profile_nickname{
-  color:       #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    left;
-  font-size:     7vh;
-  margin-top:    2vh;
-  margin-bottom: 3vh;
-  font-style:    italic;
+.Profile_container{
+  width:       40%;
+  margin-left: 16%;
+  margin-top:  2%;
+  display:     flex;
 }
+
+.ContactAndMedia_container{
+  width:       auto;
+  margin-left: 2%;
+  margin-top:  4%;
+  flex:        1;
+}
+
+.Profile_container_img{
+  flex-shrink: 0;
+}
+
+.Profile_container_content{
+  flex-grow:   1;
+  margin-left: 4%;
+}
+
+.ContactAndMedia_content{
+  margin-left: 1%;
+  margin-top: -1vh;
+}
+
+.ContactAndMedia_img{
+  height:   4.2vh;
+ }
 
 .Profile_name{
-  color:       #FFF;
+  color:         #FFF;
   font-family:   Verdana, Geneva, Tahoma, sans-serif;
   text-align:    left;
-  font-size:     2vh;
-  margin-top:    -2vh;
-  margin-bottom: 3vh;
+  font-size:     6vh;
+  font-weight:   bold;
+  margin-top:    3vh;
+}
+
+.Profile_career{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    left;
+  font-size:     3vh;
+  margin-top:    -6vh;
 }
 
 .Profile_img{
-  width: 22vh;
+  width: 16vh;
   float: left;
- }
+  border-radius: 6%;
+}
+
+.AboutMe_container{
+  margin-top: 6vh;
+}
+
+.AboutMe_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     2.4vh;
+  font-weight:   bold;
+  margin-bottom: -2vh;
+}
+
+.Projects_container{
+  margin-top: 6vh;
+}
+
+.Projects_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     2.4vh;
+  font-style:    italic;
+  font-weight:   bold;
+  margin-bottom: -1vh;
+}
 
 p{
  text-align: justify;
 }
 
-header{
- color:#FFF;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- text-align: center;
- font-size: 7vh;
- margin-bottom: -2vh;
-}
 
 footer{
  text-align: center;
@@ -221,13 +274,6 @@ footer{
 .image{
  height: 20vh;
  border-radius: 4%;
-}
-
-.social{
- position: relative;
- height: 5vh;
- border-radius: 4%;
- margin-left: 1vw;
 }
 
 .flag{
