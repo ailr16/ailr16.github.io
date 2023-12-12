@@ -1,21 +1,45 @@
 .html,body{
-  width: 97.8vw;
   scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-#lorem{
- width: 90%;
- margin: auto;
- padding: 10px;
+  overflow-x:   hidden;
+  margin-left:  auto;
+  margin-right: auto;
 }
 
 a{
- color: #FFF;
- text-decoration:underline;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- text-align: center;
+  color: #FFF;
+  text-decoration:underline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+ }
+ 
+.Profile_container{
+  width: 50%;
+  margin-left: 15%;
 }
+
+.Profile_nickname{
+  color:       #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    left;
+  font-size:     7vh;
+  margin-top:    2vh;
+  margin-bottom: 3vh;
+  font-style:    italic;
+}
+
+.Profile_name{
+  color:       #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    left;
+  font-size:     2vh;
+  margin-top:    -2vh;
+  margin-bottom: 3vh;
+}
+
+.Profile_img{
+  width: 22vh;
+  float: left;
+ }
 
 p{
  text-align: justify;
@@ -36,14 +60,6 @@ footer{
  font-size: 1vh;
 }
 
-.name{
-  color:#FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 2vh;
-  margin-top: -2vh;
-  margin-bottom: 3vh;
-}
 
 .imgAtrib{
     color:#FFF;
@@ -62,10 +78,6 @@ footer{
   margin-bottom: 1vh;
   }
 
-.img_profile{
- width: 22vh;
- border-radius: 100%;
-}
 
 .article_bio{
  position: relative;
@@ -152,16 +164,6 @@ footer{
  text-align: center;
 }
  
-.title_page{
-  color:#FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 7vh;
-  margin-top: 2vh;
-  margin-bottom: 3vh;
-  font-style: italic;
-}
-
 .title_left{
   text-align: left;
   color:#FFF;
