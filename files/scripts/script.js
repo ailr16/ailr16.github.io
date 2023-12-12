@@ -18,3 +18,17 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+
+const listOfCardElements = document.querySelectorAll('.Carousel_card');
+const cardContainer      = document.querySelector('.Carousel_card_container');
+
+listOfCardElements.forEach((cardElement, index) => {
+  cardElement.addEventListener('click', () => {
+    const scrollLeft = index * listOfCardElements[0].offsetWidth;
+    cardContainer.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+  });
+});
+
+function Carousel_move_slide(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}

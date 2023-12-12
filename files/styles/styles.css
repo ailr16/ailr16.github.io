@@ -39,7 +39,7 @@ header{
 
 .Profile_container_content{
   flex-grow:   1;
-  margin-left: 4%;
+  margin-left: 2%;
 }
 
 .ContactAndMedia_content{
@@ -55,37 +55,44 @@ header{
   color:         #FFF;
   font-family:   Verdana, Geneva, Tahoma, sans-serif;
   text-align:    left;
-  font-size:     6vh;
+  font-size:     2vw;
   font-weight:   bold;
-  margin-top:    3vh;
+  margin-top:    1.4vw;
 }
 
 .Profile_career{
   color:         #FFF;
   font-family:   Verdana, Geneva, Tahoma, sans-serif;
   text-align:    left;
-  font-size:     3vh;
-  margin-top:    -6vh;
+  font-size:     1.2vw;
+  margin-top:    -2vw;
 }
 
 .Profile_img{
-  width:         16vh;
+  width:         6vw;
   float:         left;
   border-radius: 6%;
 }
 
 .AboutMe_container{
-  margin-top: 4vh;
+  margin-top: 1vw;
 }
 
 .AboutMe_text_header{
   color:         #FFF;
   font-family:   Verdana, Geneva, Tahoma, sans-serif;
   text-align:    center;
-  font-size:     2.4vh;
+  font-size:     0.9vw;
   font-weight:   bold;
-  margin-bottom: -2vh;
 }
+
+.AboutMe_text{
+  text-align: center;
+  color:#FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.2vh;
+  margin-top: -0.9vw;
+ }
 
 .Projects_container{
   margin-top: 6vh;
@@ -137,6 +144,40 @@ header{
 
 .Carousel_card:hover {
   background: #1ED96F; /* Set background color when hover */
+}
+
+.Carousel_button_prev{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+  margin-left: 1%;
+}
+
+.Carousel_button_next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+  margin-left: 97%;
 }
 
 p{
