@@ -168,6 +168,10 @@ header{
   margin-left:     97%;
 }
 
+.Carousel_button_prev:hover, .Carousel_button_next:hover{
+  background-color: rgba(35, 14, 92, 0.664);
+}
+
 .Carousel_image{
 	position: relative;
   left:     5%;
@@ -284,6 +288,10 @@ header{
   user-select:     none;
   text-decoration: none;
   margin-left:     97%;
+}
+
+.ProjectsCarousel_button_prev:hover, .ProjectsCarousel_button_next:hover{
+  background-color: rgba(35, 14, 92, 0.664);
 }
 
 .ProjectsCarousel_image{
