@@ -6,13 +6,13 @@
 }
 
 a{
-  color:     #FFF;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align:  center;
 }
  
 header{
-  color:     #FFF;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align:  center;
   font-size:   7vh;
@@ -89,11 +89,11 @@ header{
 }
 
 .AboutMe_text{
-  text-align: center;
-  color:#FFF;
+  text-align:  center;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.2vh;
-  margin-top: -0.9vw;
+  font-size:   2.2vh;
+  margin-top:  -0.9vw;
  }
 
 .Carousel_container{
@@ -102,16 +102,16 @@ header{
 }
 
 .Carousel_card_container{
-  width:      100%;
-  display:    flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  width:            100%;
+  display:          flex;
+  overflow-x:       auto;
+  overflow-y:       hidden;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 8px;
-  width: calc(100% - 16px);
-  margin: 8px;
-  flex: 0 0 calc(100% - 16px);
+  scroll-behavior:  smooth;
+  gap:              8px;
+  width:            calc(100% - 16px);
+  margin:           8px;
+  flex:             0 0 calc(100% - 16px);
 }
 
 .Carousel_card_container::-webkit-scrollbar {
@@ -119,15 +119,15 @@ header{
 }
 
 .Carousel_card{
-  min-width: 384px;
-  height:    240px;
+  min-width:         384px;
+  height:            240px;
   scroll-snap-align: start;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background:rgba(0, 0, 0, 0);
-  color: #4a544c;
-  border-radius: 1%;
+  display:           block;
+  justify-content:   center;
+  align-items:       center;
+  background:        rgba(0, 0, 0, 0);
+  color:             #4a544c;
+  border-radius:     1%;
 }
 
 .Carousel_card:hover {
@@ -135,61 +135,61 @@ header{
 }
 
 .Carousel_button_prev{
-  cursor: pointer;
-  position: relative;
-  top: -52%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor:          pointer;
+  position:        relative;
+  top:             -52%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
   text-decoration: none;
-  margin-left: 1%;
+  margin-left:     1%;
 }
 
 .Carousel_button_next{
-  cursor: pointer;
-  position: relative;
-  top: -60%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor:          pointer;
+  position:        relative;
+  top:             -60%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
   text-decoration: none;
-  margin-left: 97%;
+  margin-left:     97%;
 }
 
 .Carousel_image{
 	position: relative;
-  left: 5%;
-  top: 5%;
-  width: 90%;
+  left:     5%;
+  top:      5%;
+  width:    90%;
 }
 
 .Carousel_video{
 	position: relative;
-  width: 90%;
-	height: 88%;
-  left: 5%;
+  width:    90%;
+	height:   88%;
+  left:     5%;
 }
 
 .Carousel_text{
 	width: 100%;
-  position: relative;
-  text-align: center;
-  color: #FFF;
+  position:    relative;
+  text-align:  center;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:     90%;
-  font-style:    italic;
+  font-size:   90%;
+  font-style:  italic;
 }
 
 /* Projects section */
@@ -207,11 +207,11 @@ header{
 }
 
 .Projects_text{
-  text-align: center;
-  color:#FFF;
+  text-align:  center;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.2vh;
-  margin-top: -0.9vw;
+  font-size:   2.2vh;
+  margin-top:  -0.9vw;
  }
 
  .ProjectsCarousel_container{
@@ -220,16 +220,16 @@ header{
 }
 
 .ProjectsCarousel_card_container{
-  width:      100%;
-  display:    flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  width:            100%;
+  display:          flex;
+  overflow-x:       auto;
+  overflow-y:       hidden;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 8px;
-  width: calc(100% - 16px);
-  margin: 8px;
-  flex: 0 0 calc(100% - 16px);
+  scroll-behavior:  smooth;
+  gap:              8px;
+  width:            calc(100% - 16px);
+  margin:           8px;
+  flex:             0 0 calc(100% - 16px);
 }
 
 .ProjectsCarousel_card_container::-webkit-scrollbar {
@@ -237,15 +237,15 @@ header{
 }
 
 .ProjectsCarousel_card{
-  min-width: 384px;
-  height:    240px;
+  min-width:         384px;
+  height:            240px;
   scroll-snap-align: start;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background:rgba(0, 0, 0, 0);
-  color: #4a544c;
-  border-radius: 1%;
+  display:           block;
+  justify-content:   center;
+  align-items:       center;
+  background:        rgba(0, 0, 0, 0);
+  color:             #4a544c;
+  border-radius:     1%;
 }
 
 .ProjectsCarousel_card:hover {
@@ -253,67 +253,69 @@ header{
 }
 
 .ProjectsCarousel_button_prev{
-  cursor: pointer;
-  position: relative;
-  top: -47%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor:          pointer;
+  position:        relative;
+  top:             -47%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
   text-decoration: none;
-  margin-left: 1%;
+  margin-left:     1%;
 }
 
 .ProjectsCarousel_button_next{
-  cursor: pointer;
-  position: relative;
-  top: -55%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  cursor:          pointer;
+  position:        relative;
+  top:             -55%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
   text-decoration: none;
-  margin-left: 97%;
+  margin-left:     97%;
 }
 
 .ProjectsCarousel_image{
 	position: relative;
-  left: 5%;
-  top: 5%;
-  width: 90%;
+  left:     5%;
+  top:      5%;
+  width:    90%;
 }
 
 .ProjectsCarousel_video{
 	position: relative;
-  width: 90%;
-	height: 88%;
-  left: 5%;
+  width:    90%;
+	height:   88%;
+  left:     5%;
 }
 
 .ProjectsCarousel_text{
-	width: 100%;
-  position: relative;
-  text-align: center;
-  color: #FFF;
+	width:       100%;
+  position:    relative;
+  text-align:  center;
+  color:       #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:     90%;
-  font-style:    italic;
+  font-size:   90%;
+  font-style:  italic;
 }
 
 p{
  text-align: justify;
 }
 
+
+/* END OF NEW STYLES  */
 
 footer{
  text-align: center;
