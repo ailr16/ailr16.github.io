@@ -200,7 +200,7 @@ header{
 /* Projects section */
 
 .Projects_container{
-  margin-top: 1vw;
+  margin-top: -0.6vw;
 }
 
 .Projects_text_header{
@@ -222,6 +222,8 @@ header{
  .ProjectsCarousel_container{
   width:  100%;
   height: 260px;
+  position: relative;
+  top: -0.6vw;
 }
 
 .ProjectsCarousel_card_container{
@@ -393,7 +395,7 @@ p{
 /* END OF NEW STYLES  */
 
 .mark_text{
-  background-color: rgba(105, 105, 105, 0.575);
+  background-color: rgba(105, 105, 105, 0.281);
   color:rgb(240, 240, 240);
 }
 
