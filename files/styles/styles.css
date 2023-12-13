@@ -132,27 +132,27 @@ header{
 
 .Carousel_card{
   min-width: 384px;
-  height:    320px;
+  height:    240px;
   scroll-snap-align: start;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  background:#17BF60;
-  border: 1px solid #4F5873;
+  background:rgba(0, 0, 0, 0);
+  border: 1px solid rgba(79, 88, 115, 0.24);
   color: #4a544c;
   border-radius: 8px;
 }
 
 .Carousel_card:hover {
-  background: #1ED96F; /* Set background color when hover */
+  background: rgba(25, 36, 66, 0.212);
 }
 
 .Carousel_button_prev{
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: -42%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 1px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -166,10 +166,10 @@ header{
 
 .Carousel_button_next{
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: -49%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 1px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -179,6 +179,30 @@ header{
   user-select: none;
   text-decoration: none;
   margin-left: 97%;
+}
+
+.Carousel_image{
+	position: relative;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+}
+
+.Carousel_video{
+	position: relative;
+  width: 90%;
+	height: 88%;
+  left: 5%;
+}
+
+.Carousel_text{
+	width: 100%;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:     90%;
+  font-style:    italic;
 }
 
 p{
@@ -491,11 +515,6 @@ footer{
   text-align:center;
   margin-top: -1vh;
   margin-bottom: -8vh;
-}
-
-.video{
-	width: 24vw;
-	height: 9vw;
 }
 
 .video_individual{
