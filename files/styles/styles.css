@@ -119,6 +119,7 @@ header{
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   gap: 8px;
   width: calc(100% - 16px);
   margin: 8px;
@@ -493,8 +494,8 @@ footer{
 }
 
 .video{
-	width: 34vw;
-	height: 19vw;
+	width: 24vw;
+	height: 9vw;
 }
 
 .video_individual{

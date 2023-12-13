@@ -29,6 +29,13 @@ listOfCardElements.forEach((cardElement, index) => {
   });
 });
 
-function Carousel_move_slide(n, no) {
-  showSlides(slideIndex[no] += n, no);
+function Carousel_move_slide(direction) {
+  const container = document.querySelector('.Carousel_card_container');
+  const scrollAmount = 400; // Adjust this value based on your card width
+
+  if (direction === -1) {
+    container.scrollLeft -= scrollAmount;
+  } else {
+    container.scrollLeft += scrollAmount;
+  }
 }
