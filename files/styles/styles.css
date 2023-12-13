@@ -323,6 +323,65 @@ p{
  text-align: justify;
 }
 
+/* Education section */
+
+.Education_container{
+  width:      100%;
+  margin-top: 1vw;
+  display:    inline-block;
+}
+
+.Education_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.9vw;
+  font-weight:   bold;
+}
+
+.Badge_container{
+  position: relative;
+  width:    100%;
+  display:  flex;
+  left:     5%;
+}
+
+.Badge_card{
+  color:    #4a544c;
+  position: relative;
+  width:    15%;
+}
+
+.Badge_image{
+  color:    #4a544c;
+  height:   6vw;
+  position: relative;
+  left:     16%;
+}
+
+.Badge_text{
+  color:      #FFF;
+  text-align: center;
+  position:   relative;
+  top:        6%;
+  font-style: italic;
+}
+
+/* Backgroudn attribution */
+
+.BackgroundAttrib_container{
+  width:      100%;
+  margin-top: 2vw;
+  display:    inline-block;
+}
+
+.BackgroundAttrib_text{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.6vw;
+  font-style:    italic;
+}
 
 /* END OF NEW STYLES  */
 
@@ -332,15 +391,6 @@ footer{
  top: -2vh;
  font-size: 1vh;
 }
-
-
-.imgAtrib{
-    color:#FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.2vh;
-  }
 
   .igText{
     color:#FFF;
@@ -604,18 +654,6 @@ footer{
 
 .badges{
   width: 12vw;
-}
-
-.c_badges{
-  position: relative;
-  top: -34vh;
-  left: 12vw;
-  width: 34vw;
-  text-align: center;
-}
-
-.schools{
-  height: 20vh;
 }
 
 @keyframes fade {
