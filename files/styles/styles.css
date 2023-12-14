@@ -474,7 +474,7 @@ p{
 
 @media only screen and (hover: none) and (pointer: coarse){
   .Profile_img{
-    width:         6vw;
+    width:         50vw;
     float:         left;
     border-radius: 6%;
   }
