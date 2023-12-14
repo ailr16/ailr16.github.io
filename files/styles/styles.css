@@ -1,0 +1,633 @@
+.html,body{
+  scroll-behavior: smooth;
+  overflow-x:      hidden;
+  margin-left:     auto;
+  margin-right:    auto;
+}
+
+a{
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:  center;
+}
+ 
+header{
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:  center;
+  font-size:   7vh;
+  display:     flex;
+}
+
+.Profile_container{
+  width:       40%;
+  margin-left: 16%;
+  margin-top:  2%;
+  display:     flex;
+}
+
+.ContactAndMedia_container{
+  width:       auto;
+  margin-left: 2%;
+  margin-top:  4vw;
+  flex:        1;
+}
+
+.Profile_container_img{
+  flex-shrink: 0;
+}
+
+.Profile_container_content{
+  flex-grow:   1;
+  margin-left: 2%;
+}
+
+.ContactAndMedia_content{
+  margin-left: 1%;
+  margin-top:  -1vh;
+}
+
+.ContactAndMedia_img{
+  height:   2.1vw;
+ }
+
+.Profile_name{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    left;
+  font-size:     2vw;
+  font-weight:   bold;
+  margin-top:    1.4vw;
+}
+
+.Profile_career{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    left;
+  font-size:     1.2vw;
+  margin-top:    -2vw;
+}
+
+.Profile_img{
+  width:         6vw;
+  float:         left;
+  border-radius: 6%;
+}
+
+/* About me section */
+
+.AboutMe_container{
+  margin-top: 1vw;
+}
+
+.AboutMe_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.9vw;
+  font-weight:   bold;
+}
+
+.AboutMe_text{
+  text-align:  center;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   2.2vh;
+  margin-top:  -0.9vw;
+ }
+
+.Carousel_container{
+  width:  100%;
+  height: 260px;
+}
+
+.Carousel_card_container{
+  width:            100%;
+  display:          flex;
+  overflow-x:       auto;
+  overflow-y:       hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior:  smooth;
+  gap:              8px;
+  width:            calc(100% - 16px);
+  margin:           8px;
+  flex:             0 0 calc(100% - 16px);
+}
+
+.Carousel_card_container::-webkit-scrollbar {
+  display: none;
+}
+
+.Carousel_card{
+  min-width:         384px;
+  height:            240px;
+  scroll-snap-align: start;
+  display:           block;
+  justify-content:   center;
+  align-items:       center;
+  background:        rgba(0, 0, 0, 0);
+  color:             #4a544c;
+  border-radius:     1%;
+}
+
+.Carousel_card:hover {
+  background: rgba(167, 143, 8, 0.63);
+}
+
+.Carousel_button_prev{
+  cursor:          pointer;
+  position:        relative;
+  top:             -52%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
+  text-decoration: none;
+  margin-left:     1%;
+}
+
+.Carousel_button_next{
+  cursor:          pointer;
+  position:        relative;
+  top:             -60%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
+  text-decoration: none;
+  margin-left:     97%;
+}
+
+.Carousel_button_prev:hover, .Carousel_button_next:hover{
+  background-color: rgba(35, 14, 92, 0.664);
+}
+
+.Carousel_image{
+	position: relative;
+  left:     5%;
+  top:      5%;
+  width:    90%;
+}
+
+.Carousel_video{
+	position: relative;
+  width:    89%;
+	height:   80%;
+  left:     5%;
+  top:      5%;
+}
+
+.Carousel_text{
+	width: 100%;
+  position:    relative;
+  text-align:  center;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   90%;
+  font-style:  italic;
+}
+
+/* Projects section */
+
+.Projects_container{
+  margin-top: -0.6vw;
+}
+
+.Projects_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.9vw;
+  font-weight:   bold;
+}
+
+.Projects_text{
+  text-align:  center;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   2.2vh;
+  margin-top:  -0.9vw;
+ }
+
+ .ProjectsCarousel_container{
+  width:  100%;
+  height: 260px;
+  position: relative;
+  top: -0.6vw;
+}
+
+.ProjectsCarousel_card_container{
+  width:            100%;
+  display:          flex;
+  overflow-x:       auto;
+  overflow-y:       hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior:  smooth;
+  gap:              8px;
+  width:            calc(100% - 16px);
+  margin:           8px;
+  flex:             0 0 calc(100% - 16px);
+}
+
+.ProjectsCarousel_card_container::-webkit-scrollbar {
+  display: none;
+}
+
+.ProjectsCarousel_card{
+  min-width:         384px;
+  height:            240px;
+  scroll-snap-align: start;
+  display:           block;
+  justify-content:   center;
+  align-items:       center;
+  background:        rgba(0, 0, 0, 0);
+  color:             #4a544c;
+  border-radius:     1%;
+}
+
+.ProjectsCarousel_card:hover {
+  background: rgba(167, 143, 8, 0.63);
+}
+
+.ProjectsCarousel_button_prev{
+  cursor:          pointer;
+  position:        relative;
+  top:             -47%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
+  text-decoration: none;
+  margin-left:     1%;
+}
+
+.ProjectsCarousel_button_next{
+  cursor:          pointer;
+  position:        relative;
+  top:             -55%;
+  width:           auto;
+  margin-top:      1px;
+  padding:         16px;
+  color:           white;
+  font-weight:     bold;
+  font-size:       18px;
+  transition:      0.6s ease;
+  border-radius:   0 3px 3px 0;
+  user-select:     none;
+  text-decoration: none;
+  margin-left:     97%;
+}
+
+.ProjectsCarousel_button_prev:hover, .ProjectsCarousel_button_next:hover{
+  background-color: rgba(35, 14, 92, 0.664);
+}
+
+.ProjectsCarousel_image{
+	position: relative;
+  left:     5%;
+  top:      5%;
+  width:    90%;
+}
+
+.ProjectsCarousel_video{
+	position: relative;
+  width:    90%;
+	height:   88%;
+  left:     5%;
+}
+
+.ProjectsCarousel_text{
+	width:       100%;
+  position:    relative;
+  text-align:  center;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   90%;
+  font-style:  italic;
+}
+
+p{
+ text-align: justify;
+}
+
+/* Education section */
+
+.Education_container{
+  width:      100%;
+  margin-top: 1vw;
+  display:    inline-block;
+}
+
+.Education_text_header{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.9vw;
+  font-weight:   bold;
+}
+
+.Badge_container{
+  position: relative;
+  width:    100%;
+  display:  flex;
+  left:     5%;
+}
+
+.Badge_card{
+  color:    #4a544c;
+  position: relative;
+  width:    15%;
+}
+
+.Badge_image{
+  color:    #4a544c;
+  height:   6vw;
+  position: relative;
+  left:     16%;
+}
+
+.Badge_text{
+  color:      #FFF;
+  text-align: center;
+  position:   relative;
+  top:        6%;
+  font-style: italic;
+}
+
+/* Backgroudn attribution */
+
+.BackgroundAttrib_container{
+  width:      100%;
+  margin-top: 2vw;
+  display:    inline-block;
+}
+
+.BackgroundAttrib_text{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     0.6vw;
+  font-style:    italic;
+}
+
+/* MX flag gif */
+
+.Flag_gif{
+  position: relative;
+  height:   2vh;
+}
+
+.ProjectDetails_header{
+  width:      100%;
+  text-align: center;
+}
+
+.ProjectDetails_title{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     2vw;
+  font-style:    italic;
+  font-weight:   bold;
+}
+
+.ProjectDetails_info_container{
+  width:   100%;
+  display: flex;
+}
+
+.ProjectDetails_info_section{
+  position:    relative;
+  width:       100%;
+  text-align:  right;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   1vw;
+  margin-top:  4vw;
+}
+
+.ProjectDetails_info_title{
+  font-style:  italic;
+  text-align:  right;
+}
+
+.ProjectDetails_media_section{
+  width:   100%;
+  position: relative;
+  left: 2%;
+}
+
+.ProjectDetails_media_video_wide{
+  width:   24vw;
+  height:  13.5vw;
+}
+
+.ProjectDetails_media_video_vertical{
+  width:   13.5vw;
+  height:  24vw;
+}
+
+.ProjectDetails_media_image{
+  width:   20vw;
+}
+
+.ProjectDetails_ret_index{
+  font-style:  italic;
+  text-align:  right;
+  color: rgb(134, 116, 39);
+}
+
+.ProjectDetails_ret_index:hover{
+  font-style:  italic;
+  text-align:  right;
+  font-weight: bold;
+  color: rgb(189, 156, 12);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/* END OF NEW STYLES  */
+
+.mark_text{
+  background-color: rgba(105, 105, 105, 0.281);
+  color:rgb(240, 240, 240);
+}
+
+/*//////////////////  SMALL DISPLAYS ////////////////////// */
+
+@media screen and (max-width: 560px) {
+  .article_bio{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    top: 0vh;
+    width: 64vw;
+    margin-top: 0vh;
+   }
+   
+	.slideshow-container {
+    width: 56vw;
+    position: relative;
+    margin: auto;
+    left: 10vw;
+    top: 13vh;
+  }
+
+  .article_education{
+    position: relative;
+    text-align: right;
+    width: 64vw;
+    right: -23.8vw;
+    top: 9vh;
+  }
+
+  .c_schools{
+    position: relative;
+    top: 9.2vh;
+    left: 11vw;
+    width: 64vw;
+    text-align: center;
+  }
+
+  .schools{
+    height: 20vh;
+  }
+
+  .article_projects{
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    position: relative;
+    text-align: left;
+    top: 8vh;
+    left: 12vw;
+    width: 64vw;
+   }
+
+   .article_media{
+    position: relative;
+    text-align: right;
+    width: 48vw;
+    left: 38vw;
+    top: 4vh;
+   }
+
+   .c_media{
+    position: relative;
+    top: 8vh;
+    left: 11vw;
+    width: 46vw;
+    text-align: left;
+   }
+
+   .slideshow-container2 {
+    width: 56vw;
+    position: relative;
+    margin: auto;
+    left: 10vw;
+    top: 5vh;
+  }
+
+   .article_certificates{
+    position: relative;
+    text-align: right;
+    width: 64vw;
+    right: -23.8vw;
+    top: 9vh;
+  }
+
+   .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 38%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+  }
+
+   .menu_dot{
+    position: relative;
+    width: 56vw;
+    left: 0vw;
+    top: -2.4vh;
+    text-align:center;
+    margin-top: -1vh;
+  }
+
+  .video{
+    width: 56vw;
+    height: 31.4vw;
+  }
+
+  .c_badges{
+    position: relative;
+    top: 9.2vh;
+    left: 11vw;
+    width: 64vw;
+    text-align: center;
+  }
+
+  .badges{
+    width: 24vw;
+  }
+
+  .social_nets{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 10vh;
+    bottom: 16vh;
+  }
+
+  footer{
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    font-size: 1vh;
+   }
+
+   .video_individual{
+    width: 60vw;
+    height: 33.5vw;
+  }
+
+  .article_individual{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 64vw;
+    top: 4vh;
+  }
+
+  .article_individual_repo{
+    position: relative;
+    text-align: left;
+    left: 12vw;
+    width: 64vw;
+    top: 14vh;
+    bottom: 1vh;
+  }
+}

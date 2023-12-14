@@ -14,8 +14,7 @@
 	
 		<link rel="shortcut icon" href="./files/img/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="./files/img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-		<link rel="stylesheet" href="./files/styles/estilos.css">
+		<link rel="stylesheet" href="./files/styles/styles.css">
 	</head>
 
 	<style>
@@ -29,61 +28,36 @@
 		}
 	</style>
 	
-	<header data-aos="fade-down" data-aos-delay="300" data-aos-once="true">
-		<p class="title_page">
-			BODE PLOTTER
-		</p>
+	<header>
+		<div class="ProjectDetails_header">
+			<p class="ProjectDetails_title">BODE PLOTTER</p>
+		</div>
 	</header>
 
 	<body>
-        <div class="article_media" data-aos="fade-left" data-aos-delay="512">
-			<p class="title_right">
-				<mark class="mark_text">
-					ABOUT THE PROJECT
-				</mark>
-			</p>
-
-			<p class="text_right">
-				<mark class="mark_text">
-					This project uses a Rigol oscilloscope (DS1054Z)<br>
-					and a FY3224s signal generator to run a frequency response<br>
-					analysis and creating Bode plots. It's coded in Python and<br>
-					tested under Ubuntu, but it must works in any Operating System.
-				</mark>
-			</p>
-		</div>
-
-		<div class="c_media" data-aos="fade-right" data-aos-delay="512">
-			<iframe class="video_individual" src="https://www.youtube.com/embed/HRYPE_VEFJE" frameborder="0" allowfullscreen></iframe>
-			<iframe class="video_individual" src="https://www.youtube.com/embed/PC2ccm4rZgQ" frameborder="0" allowfullscreen></iframe>
-			<iframe class="video_individual" src="https://www.youtube.com/embed/ivJM8q00k0E" frameborder="0" allowfullscreen></iframe>
-			<iframe class="video_individual" src="https://www.youtube.com/embed/WFBuwD8cPuU" frameborder="0" allowfullscreen></iframe>
-			<img class="image" src="./files/img/scope.jpg" alt="Osciloscope and Waveform Generator">
-			<img class="image" src="./files/img/plotterRes.png" alt="Bode plot (magnitude)">
-		</div>
-
-		<div class="article_individual_repo" data-aos="fade-up" data-aos-delay="200">
-			<p class="title_left">
-				<mark class="mark_text">
-					PROJECT REPOSITORY
-				</mark>
-			</p>
-			<p class="text_left">
+		<div class="ProjectDetails_info_container">
+			<div class="ProjectDetails_info_section">
+				<p class="ProjectDetails_info_title">ABOUT THE PROJECT</p>
+				This project uses a Rigol oscilloscope (DS1054Z)<br>
+				and a FY3224s signal generator to run a frequency response<br>
+				analysis and creating Bode plots. It's coded in Python and<br>
+				tested under Ubuntu, but it must works in any Operating System.<br>
+				<br>
+				<p class="ProjectDetails_info_title">PROJECT REPOSITORY (GitHub)</p>
 				<mark class="mark_text">
 					<a href="https://github.com/ailr16/BodePlot-DS1054Z" target="_blank">BodePlot-DS1054Z</a>
 				</mark>
-			</p>
-			<br>
-			<br>
-            <br>
-			<a href="index.html" id="text_left">&#10094;RETURN</a>
-			<br>
-			<br>
-		</div>
-	
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- 		<script>
- 			AOS.init();
- 		</script>
+				<br><br><br><br><br><br><br><br>
+				<a href="index.html" class="ProjectDetails_ret_index">&#10094;RETURN TO PORTFOLIO</a>
+			</div>
+			<div class="ProjectDetails_media_section">
+				<iframe class="ProjectDetails_media_video_wide" src="https://www.youtube.com/embed/HRYPE_VEFJE" frameborder="0" allowfullscreen></iframe></p>
+				<iframe class="ProjectDetails_media_video_vertical" src="https://www.youtube.com/embed/PC2ccm4rZgQ" frameborder="0" allowfullscreen></iframe>
+				<iframe class="ProjectDetails_media_video_vertical" src="https://www.youtube.com/embed/WFBuwD8cPuU" frameborder="0" allowfullscreen></iframe></p>
+				<iframe class="ProjectDetails_media_video_wide" src="https://www.youtube.com/embed/ivJM8q00k0E" frameborder="0" allowfullscreen></iframe></p>
+				<img class="ProjectDetails_media_image" src="./files/img/bodePlotterMedia/scope.jpg" alt="Osciloscope and Waveform Generator">
+				<img class="ProjectDetails_media_image" src="./files/img/bodePlotterMedia/plotterRes.png" alt="Bode plot (magnitude)">
+			</div>
+		</div>	
 	</body>
 </html>
