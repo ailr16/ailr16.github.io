@@ -392,6 +392,8 @@ p{
   height:   2vh;
 }
 
+/* Styles for individual projects pages */
+
 .ProjectDetails_header{
   width:      100%;
   text-align: center;
@@ -673,5 +675,66 @@ p{
     user-select:     none;
     text-decoration: none;
     margin-left:     92%;
+  }
+
+  /* Education section */
+
+  .Education_container{
+    width:      94%;
+    margin-top: -4vw;
+  }
+
+  .Education_text_header{
+    color:         #FFF;
+    font-family:   Verdana, Geneva, Tahoma, sans-serif;
+    text-align:    center;
+    font-size:     3vw;
+    font-weight:   bold;
+  }
+
+  .Badge_container{
+    position: relative;
+    width:    100%;
+    display:  block;
+  }
+
+  .Badge_card{
+    color:    #4a544c;
+    position: relative;
+    width:    94%;
+    display:  block;
+    margin-top: 6vw;;
+  }
+
+  .Badge_image{
+    color:    #4a544c;
+    height:   32vw;
+    position: relative;
+    left:     16%;
+  }
+
+  .Badge_text{
+    color:      #FFF;
+    text-align: center;
+    position:   relative;
+    top:        6%;
+    font-style: italic;
+    size:       6vw;
+  }
+
+  /* Backgroudn attribution */
+
+  .BackgroundAttrib_container{
+    width:      98%;
+    margin-top: 12vw;
+    display:    inline-block;
+  }
+
+  .BackgroundAttrib_text{
+    color:         #FFF;
+    font-family:   Verdana, Geneva, Tahoma, sans-serif;
+    text-align:    center;
+    font-size:     4vw;
+    font-style:    italic;
   }
 }
