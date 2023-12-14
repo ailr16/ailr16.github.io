@@ -565,10 +565,6 @@ p{
     border-radius:     1%;
   }
   
-  .Carousel_card:hover {
-    background: rgba(167, 143, 8, 0.63);
-  }
-  
   .Carousel_button_prev{
     cursor:          pointer;
     position:        relative;
@@ -606,14 +602,15 @@ p{
   /* Projects section */
 
   .Projects_container{
-    margin-top: -0.6vw;
+    margin-top: -4vw;
+    width: 96%;
   }
 
   .Projects_text_header{
     color:         #FFF;
     font-family:   Verdana, Geneva, Tahoma, sans-serif;
     text-align:    center;
-    font-size:     0.9vw;
+    font-size:     3vw;
     font-weight:   bold;
   }
 
@@ -621,37 +618,20 @@ p{
     text-align:  center;
     color:       #FFF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:   2.2vh;
-    margin-top:  -0.9vw;
+    font-size:   2vh;
+    margin-top:  -2.2vw;
   }
 
   .ProjectsCarousel_container{
     width:  100%;
-    height: 260px;
+    height: 36vh;
     position: relative;
     top: -0.6vw;
   }
 
-  .ProjectsCarousel_card_container{
-    width:            100%;
-    display:          flex;
-    overflow-x:       auto;
-    overflow-y:       hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior:  smooth;
-    gap:              8px;
-    width:            calc(100% - 16px);
-    margin:           8px;
-    flex:             0 0 calc(100% - 16px);
-  }
-
-  .ProjectsCarousel_card_container::-webkit-scrollbar {
-    display: none;
-  }
-
   .ProjectsCarousel_card{
-    min-width:         384px;
-    height:            240px;
+    min-width:         92vw;
+    height:            30vh;
     scroll-snap-align: start;
     display:           block;
     justify-content:   center;
@@ -661,14 +641,10 @@ p{
     border-radius:     1%;
   }
 
-  .ProjectsCarousel_card:hover {
-    background: rgba(167, 143, 8, 0.63);
-  }
-
   .ProjectsCarousel_button_prev{
     cursor:          pointer;
     position:        relative;
-    top:             -47%;
+    top:             -52%;
     width:           auto;
     margin-top:      1px;
     padding:         16px;
@@ -679,13 +655,13 @@ p{
     border-radius:   0 3px 3px 0;
     user-select:     none;
     text-decoration: none;
-    margin-left:     1%;
+    margin-left:     2%;
   }
 
   .ProjectsCarousel_button_next{
     cursor:          pointer;
     position:        relative;
-    top:             -55%;
+    top:             -62%;
     width:           auto;
     margin-top:      1px;
     padding:         16px;
@@ -696,34 +672,6 @@ p{
     border-radius:   0 3px 3px 0;
     user-select:     none;
     text-decoration: none;
-    margin-left:     97%;
-  }
-
-  .ProjectsCarousel_button_prev:hover, .ProjectsCarousel_button_next:hover{
-    background-color: rgba(35, 14, 92, 0.664);
-  }
-
-  .ProjectsCarousel_image{
-    position: relative;
-    left:     5%;
-    top:      5%;
-    width:    90%;
-  }
-
-  .ProjectsCarousel_video{
-    position: relative;
-    width:    90%;
-    height:   88%;
-    left:     5%;
-  }
-
-  .ProjectsCarousel_text{
-    width:       100%;
-    position:    relative;
-    text-align:  center;
-    color:       #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:   90%;
-    font-style:  italic;
+    margin-left:     92%;
   }
 }
