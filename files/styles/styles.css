@@ -470,8 +470,6 @@ p{
   color:rgb(240, 240, 240);
 }
 
-/* END OF NEW STYLES  */
-
 /*//////////////////  SMALL DISPLAYS ////////////////////// */
 
 /* Profile section */
@@ -680,7 +678,7 @@ p{
   /* Education section */
 
   .Education_container{
-    width:      94%;
+    width:      87.5%;
     margin-top: -4vw;
   }
 
@@ -725,7 +723,7 @@ p{
   /* Backgroudn attribution */
 
   .BackgroundAttrib_container{
-    width:      98%;
+    width:      96%;
     margin-top: 12vw;
     display:    inline-block;
   }
@@ -736,5 +734,61 @@ p{
     text-align:    center;
     font-size:     4vw;
     font-style:    italic;
+  }
+
+  /* Styles for individual projects pages */
+
+  .ProjectDetails_header{
+    width:      96%;
+    text-align: center;
+  }
+
+  .ProjectDetails_title{
+    color:         #FFF;
+    font-family:   Verdana, Geneva, Tahoma, sans-serif;
+    text-align:    center;
+    font-size:     6vw;
+    font-style:    italic;
+    font-weight:   bold;
+  }
+
+  .ProjectDetails_info_container{
+    width:   96%;
+    display: flex;
+  }
+
+  .ProjectDetails_info_section{
+    position:    relative;
+    width:       96%;
+    text-align:  right;
+    color:       #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:   5vw;
+    margin-top:  4vw;
+  }
+
+  .ProjectDetails_info_title{
+    font-style:  italic;
+    text-align:  right;
+  }
+
+  .ProjectDetails_media_section{
+    width:    96%;
+    position: relative;
+    left:     2%;
+  }
+
+  .ProjectDetails_media_video_wide{
+    width:   23vh;
+    height:  32vh;
+  }
+
+  .ProjectDetails_media_video_vertical{
+    width:   22.5vh;
+    height:  40vh;
+  }
+
+  .ProjectDetails_media_image{
+    width:   25vh;
   }
 }
