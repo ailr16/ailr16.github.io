@@ -463,15 +463,24 @@ p{
 	box-sizing: border-box;
 }
 
-/* END OF NEW STYLES  */
-
 .mark_text{
   background-color: rgba(105, 105, 105, 0.281);
   color:rgb(240, 240, 240);
 }
 
+/* END OF NEW STYLES  */
+
 /*//////////////////  SMALL DISPLAYS ////////////////////// */
 
+@media only screen and (hover: none) and (pointer: coarse){
+  .Profile_img{
+    width:         6vw;
+    float:         left;
+    border-radius: 6%;
+  }
+}
+
+/*
 @media screen and (max-width: 560px) {
   .article_bio{
     position: relative;
@@ -631,3 +640,4 @@ p{
     bottom: 1vh;
   }
 }
+*/
