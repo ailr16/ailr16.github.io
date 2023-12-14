@@ -389,7 +389,78 @@ p{
 
 .Flag_gif{
   position: relative;
-  height: 2vh;
+  height:   2vh;
+}
+
+.ProjectDetails_header{
+  width:      100%;
+  text-align: center;
+}
+
+.ProjectDetails_title{
+  color:         #FFF;
+  font-family:   Verdana, Geneva, Tahoma, sans-serif;
+  text-align:    center;
+  font-size:     2vw;
+  font-style:    italic;
+  font-weight:   bold;
+}
+
+.ProjectDetails_info_container{
+  width:   100%;
+  display: flex;
+}
+
+.ProjectDetails_info_section{
+  position:    relative;
+  width:       100%;
+  text-align:  right;
+  color:       #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:   1vw;
+  margin-top:  4vw;
+}
+
+.ProjectDetails_info_title{
+  font-style:  italic;
+  text-align:  right;
+}
+
+.ProjectDetails_media_section{
+  width:   100%;
+  position: relative;
+  left: 2%;
+}
+
+.ProjectDetails_media_video_wide{
+  width:   24vw;
+  height:  13.5vw;
+}
+
+.ProjectDetails_media_video_vertical{
+  width:   13.5vw;
+  height:  24vw;
+}
+
+.ProjectDetails_media_image{
+  width:   20vw;
+}
+
+.ProjectDetails_ret_index{
+  font-style:  italic;
+  text-align:  right;
+  color: rgb(134, 116, 39);
+}
+
+.ProjectDetails_ret_index:hover{
+  font-style:  italic;
+  text-align:  right;
+  font-weight: bold;
+  color: rgb(189, 156, 12);
+}
+
+*{
+	box-sizing: border-box;
 }
 
 /* END OF NEW STYLES  */
@@ -397,10 +468,6 @@ p{
 .mark_text{
   background-color: rgba(105, 105, 105, 0.281);
   color:rgb(240, 240, 240);
-}
-
-*{
-	box-sizing:border-box
 }
 
 /*//////////////////  SMALL DISPLAYS ////////////////////// */
