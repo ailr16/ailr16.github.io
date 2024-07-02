@@ -1,794 +1,503 @@
-.html,body{
+/* 
+  Styles for non-vertical screen
+*/
+
+/******** General Styles (Applies for all pages) ********/
+
+.html,
+body {
   scroll-behavior: smooth;
-  overflow-x:      hidden;
-  margin-left:     auto;
-  margin-right:    auto;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a{
-  color:       #FFF;
+/* Links */
+a {
+  color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align:  center;
-}
- 
-header{
-  color:       #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align:  center;
-  font-size:   7vh;
-  display:     flex;
+  text-align: center;
 }
 
-.Profile_container{
-  width:       40%;
+.mark_text {
+  background-color: rgba(105, 105, 105, 0.281);
+  color: rgb(240, 240, 240);
+}
+
+/* MX flag gif */
+.Flag_gif {
+  position: relative;
+  height: 2vh;
+}
+
+/*******************************************************/
+
+
+/******************** Index Styles *********************/
+
+/* ////// All related to profile header ////// */
+
+/* Text style for name and job title */
+header {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 7vh;
+  display: flex;
+}
+
+/* Text style for name and job title */
+.Profile_container {
+  width: 40%;
   margin-left: 16%;
-  margin-top:  2%;
-  display:     flex;
+  margin-top: 2%;
+  display: flex;
 }
 
-.ContactAndMedia_container{
-  width:       auto;
-  margin-left: 2%;
-  margin-top:  4vw;
-  flex:        1;
-}
-
-.Profile_container_img{
+/* Profile image */
+.Profile_container_imgContainer {
   flex-shrink: 0;
 }
 
-.Profile_container_content{
-  flex-grow:   1;
+.Profile_container_imgContainer_img {
+  width: 6vw;
+  float: left;
+  border-radius: 8%;
+}
+
+.Profile_container_id {
+  flex-grow: 1;
   margin-left: 2%;
 }
 
-.ContactAndMedia_content{
+.Profile_container_id_name {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 1.4vw;
+}
+
+.Profile_container_id_career {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  font-size: 1.2vw;
+  margin-top: -2vw;
+}
+
+.Profile_container_contactAndMedia {
+  width: auto;
+  margin-left: 2%;
+  margin-top: 4vw;
+  flex: 1;
+}
+
+.Profile_container_contactAndMedia_content {
   margin-left: 1%;
-  margin-top:  -1vh;
+  margin-top: -1vh;
 }
 
-.ContactAndMedia_img{
-  height:   2.1vw;
- }
-
-.Profile_name{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    left;
-  font-size:     2vw;
-  font-weight:   bold;
-  margin-top:    1.4vw;
+.Profile_container_contactAndMedia_content_icon {
+  height: 2.1vw;
 }
 
-.Profile_career{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    left;
-  font-size:     1.2vw;
-  margin-top:    -2vw;
-}
+/* ////// END profile header ////// */
 
-.Profile_img{
-  width:         6vw;
-  float:         left;
-  border-radius: 6%;
-}
+
+/* ////// All related to About Me section ////// */
 
 /* About me section */
-
-.AboutMe_container{
+.AboutMe_container {
   margin-top: 1vw;
 }
 
-.AboutMe_text_header{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    center;
-  font-size:     0.9vw;
-  font-weight:   bold;
+.AboutMe_container_sectionTitle {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: bold;
 }
 
-.AboutMe_text{
-  text-align:  center;
-  color:       #FFF;
+.AboutMe_container_text {
+  text-align: center;
+  color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:   2.2vh;
-  margin-top:  -0.9vw;
- }
+  font-size: 2.2vh;
+  margin-top: -0.9vw;
+}
 
-.Carousel_container{
-  width:  100%;
+.AboutMe_container_carouselContainer {
+  width: 100%;
   height: 260px;
 }
 
-.Carousel_card_container{
-  width:            100%;
-  display:          flex;
-  overflow-x:       auto;
-  overflow-y:       hidden;
+.AboutMe_container_carouselContainer_cardContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-behavior:  smooth;
-  gap:              8px;
-  width:            calc(100% - 16px);
-  margin:           8px;
-  flex:             0 0 calc(100% - 16px);
+  scroll-behavior: smooth;
+  gap: 8px;
+  width: calc(100% - 16px);
+  margin: 8px;
+  flex: 0 0 calc(100% - 16px);
 }
 
-.Carousel_card_container::-webkit-scrollbar {
+.AboutMe_container_carouselContainer_cardContainer::-webkit-scrollbar {
   display: none;
 }
 
-.Carousel_card{
-  min-width:         384px;
-  height:            240px;
+.AboutMe_container_carouselContainer_cardContainer_card {
+  min-width: 384px;
+  height: 240px;
   scroll-snap-align: start;
-  display:           block;
-  justify-content:   center;
-  align-items:       center;
-  background:        rgba(0, 0, 0, 0);
-  color:             #4a544c;
-  border-radius:     1%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  color: #4a544c;
+  border-radius: 1%;
 }
 
-.Carousel_card:hover {
+.AboutMe_container_carouselContainer_cardContainer_card:hover {
   background: rgba(167, 143, 8, 0.63);
 }
 
-.Carousel_button_prev{
-  cursor:          pointer;
-  position:        relative;
-  top:             -52%;
-  width:           auto;
-  margin-top:      1px;
-  padding:         16px;
-  color:           white;
-  font-weight:     bold;
-  font-size:       18px;
-  transition:      0.6s ease;
-  border-radius:   0 3px 3px 0;
-  user-select:     none;
+.AboutMe_container_carouselContainer_buttonPrev {
+  cursor: pointer;
+  position: relative;
+  top: -52%;
+  width: auto;
+  margin-top: 1px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
   text-decoration: none;
-  margin-left:     1%;
+  margin-left: 1%;
 }
 
-.Carousel_button_next{
-  cursor:          pointer;
-  position:        relative;
-  top:             -60%;
-  width:           auto;
-  margin-top:      1px;
-  padding:         16px;
-  color:           white;
-  font-weight:     bold;
-  font-size:       18px;
-  transition:      0.6s ease;
-  border-radius:   0 3px 3px 0;
-  user-select:     none;
+.AboutMe_container_carouselContainer_buttonNext {
+  cursor: pointer;
+  position: relative;
+  top: -60%;
+  width: auto;
+  margin-top: 1px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
   text-decoration: none;
-  margin-left:     97%;
+  margin-left: 97%;
 }
 
-.Carousel_button_prev:hover, .Carousel_button_next:hover{
+.AboutMe_container_carouselContainer_buttonPrev:hover,
+.AboutMe_container_carouselContainer_buttonNext:hover {
   background-color: rgba(35, 14, 92, 0.664);
 }
 
-.Carousel_image{
-	position: relative;
-  left:     5%;
-  top:      5%;
-  width:    90%;
+.AboutMe_container_carouselContainer_cardContainer_card_img {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  width: 90%;
 }
 
-.Carousel_video{
-	position: relative;
-  width:    89%;
-	height:   80%;
-  left:     5%;
-  top:      5%;
+.AboutMe_container_carouselContainer_cardContainer_card_vid {
+  position: relative;
+  width: 89%;
+  height: 80%;
+  left: 5%;
+  top: 5%;
 }
 
-.Carousel_text{
-	width: 100%;
-  position:    relative;
-  text-align:  center;
-  color:       #FFF;
+.AboutMe_container_carouselContainer_cardContainer_card_text {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:   90%;
-  font-style:  italic;
+  font-size: 90%;
+  font-style: italic;
 }
 
-/* Projects section */
+/* ////// END About Me ////// */
 
-.Projects_container{
+
+/* ////// All related to Projects section ////// */
+.Projects_container {
   margin-top: -0.6vw;
 }
 
-.Projects_text_header{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    center;
-  font-size:     0.9vw;
-  font-weight:   bold;
+.Projects_container_sectionTitle {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: bold;
 }
 
-.Projects_text{
-  text-align:  center;
-  color:       #FFF;
+.Projects_text {
+  text-align: center;
+  color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:   2.2vh;
-  margin-top:  -0.9vw;
- }
+  font-size: 2.2vh;
+  margin-top: -0.9vw;
+}
 
- .ProjectsCarousel_container{
-  width:  100%;
+.Projects_container_carouselContainer {
+  width: 100%;
   height: 260px;
   position: relative;
   top: -0.6vw;
 }
 
-.ProjectsCarousel_card_container{
-  width:            100%;
-  display:          flex;
-  overflow-x:       auto;
-  overflow-y:       hidden;
+.Projects_container_carouselContainer_cardContainer {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-behavior:  smooth;
-  gap:              8px;
-  width:            calc(100% - 16px);
-  margin:           8px;
-  flex:             0 0 calc(100% - 16px);
+  scroll-behavior: smooth;
+  gap: 8px;
+  width: calc(100% - 16px);
+  margin: 8px;
+  flex: 0 0 calc(100% - 16px);
 }
 
-.ProjectsCarousel_card_container::-webkit-scrollbar {
+.Projects_container_carouselContainer_cardContainer::-webkit-scrollbar {
   display: none;
 }
 
-.ProjectsCarousel_card{
-  min-width:         384px;
-  height:            240px;
+.Projects_container_carouselContainer_cardContainer_card {
+  min-width: 384px;
+  height: 240px;
   scroll-snap-align: start;
-  display:           block;
-  justify-content:   center;
-  align-items:       center;
-  background:        rgba(0, 0, 0, 0);
-  color:             #4a544c;
-  border-radius:     1%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+  color: #4a544c;
+  border-radius: 1%;
 }
 
-.ProjectsCarousel_card:hover {
+.Projects_container_carouselContainer_cardContainer_card:hover {
   background: rgba(167, 143, 8, 0.63);
 }
 
-.ProjectsCarousel_button_prev{
-  cursor:          pointer;
-  position:        relative;
-  top:             -47%;
-  width:           auto;
-  margin-top:      1px;
-  padding:         16px;
-  color:           white;
-  font-weight:     bold;
-  font-size:       18px;
-  transition:      0.6s ease;
-  border-radius:   0 3px 3px 0;
-  user-select:     none;
+.Projects_container_carouselContainer_cardContainer_buttonPrev {
+  cursor: pointer;
+  position: relative;
+  top: -47%;
+  width: auto;
+  margin-top: 1px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
   text-decoration: none;
-  margin-left:     1%;
+  margin-left: 1%;
 }
 
-.ProjectsCarousel_button_next{
-  cursor:          pointer;
-  position:        relative;
-  top:             -55%;
-  width:           auto;
-  margin-top:      1px;
-  padding:         16px;
-  color:           white;
-  font-weight:     bold;
-  font-size:       18px;
-  transition:      0.6s ease;
-  border-radius:   0 3px 3px 0;
-  user-select:     none;
+.Projects_container_carouselContainer_cardContainer_buttonNext {
+  cursor: pointer;
+  position: relative;
+  top: -55%;
+  width: auto;
+  margin-top: 1px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
   text-decoration: none;
-  margin-left:     97%;
+  margin-left: 97%;
 }
 
-.ProjectsCarousel_button_prev:hover, .ProjectsCarousel_button_next:hover{
+.Projects_container_carouselContainer_cardContainer_buttonPrev:hover,
+.Projects_container_carouselContainer_cardContainer_buttonNext:hover {
   background-color: rgba(35, 14, 92, 0.664);
 }
 
-.ProjectsCarousel_image{
-	position: relative;
-  left:     5%;
-  top:      5%;
-  width:    90%;
-}
-
-.ProjectsCarousel_video{
-	position: relative;
-  width:    90%;
-	height:   88%;
-  left:     5%;
-}
-
-.ProjectsCarousel_text{
-	width:       100%;
-  position:    relative;
-  text-align:  center;
-  color:       #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:   90%;
-  font-style:  italic;
-}
-
-p{
- text-align: justify;
-}
-
-/* Education section */
-
-.Education_container{
-  width:      100%;
-  margin-top: 1vw;
-  display:    inline-block;
-}
-
-.Education_text_header{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    center;
-  font-size:     0.9vw;
-  font-weight:   bold;
-}
-
-.Badge_container{
+.Projects_container_carouselContainer_cardContainer_card_img {
   position: relative;
-  width:    100%;
-  display:  flex;
-  left:     5%;
+  left: 5%;
+  top: 5%;
+  width: 90%;
 }
 
-.Badge_card{
-  color:    #4a544c;
+.Projects_container_carouselContainer_cardContainer_card_vid {
   position: relative;
-  width:    15%;
+  width: 89%;
+  height: 80%;
+  left: 5%;
+  top: 5%;
 }
 
-.Badge_image{
-  color:    #4a544c;
-  height:   6vw;
+.Projects_container_carouselContainer_cardContainer_card_text {
+  width: 100%;
   position: relative;
-  left:     16%;
-}
-
-.Badge_text{
-  color:      #FFF;
   text-align: center;
-  position:   relative;
-  top:        6%;
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90%;
   font-style: italic;
 }
 
-/* Backgroudn attribution */
-
-.BackgroundAttrib_container{
-  width:      100%;
-  margin-top: 2vw;
-  display:    inline-block;
+p {
+  text-align: justify;
 }
 
-.BackgroundAttrib_text{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    center;
-  font-size:     0.6vw;
-  font-style:    italic;
+/* ////// END Projects ////// */
+
+
+
+/* ////// All related to Projects section ////// */
+.Education_container {
+  width: 100%;
+  margin-top: 1vw;
+  display: inline-block;
 }
 
-/* MX flag gif */
+.Education_container_title {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: bold;
+}
 
-.Flag_gif{
+.Education_container_badgeContainer {
   position: relative;
-  height:   2vh;
+  width: 100%;
+  display: flex;
+  left: 5%;
 }
+
+.Education_container_badgeContainer_card {
+  color: #4a544c;
+  position: relative;
+  width: 15%;
+}
+
+.Education_container_badgeContainer_card_img {
+  color: #4a544c;
+  height: 6vw;
+  position: relative;
+  left: 16%;
+}
+
+.Education_container_badgeContainer_card_text {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 6%;
+  font-style: italic;
+}
+
+/* ////// END Education ////// */
+
+/* Background attribution */
+.BackgroundAttrib_container {
+  width: 100%;
+  margin-top: 2vw;
+  display: inline-block;
+}
+
+.BackgroundAttrib_text {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 0.6vw;
+  font-style: italic;
+}
+
+/*******************************************************/
 
 /* Styles for individual projects pages */
 
-.ProjectDetails_header{
-  width:      100%;
+.ProjectDetails_header {
+  width: 100%;
   text-align: center;
 }
 
-.ProjectDetails_title{
-  color:         #FFF;
-  font-family:   Verdana, Geneva, Tahoma, sans-serif;
-  text-align:    center;
-  font-size:     2vw;
-  font-style:    italic;
-  font-weight:   bold;
+.ProjectDetails_title {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2vw;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.ProjectDetails_info_container{
-  width:   100%;
+.ProjectDetails_info_container {
+  width: 100%;
   display: flex;
 }
 
-.ProjectDetails_info_section{
-  position:    relative;
-  width:       100%;
-  text-align:  right;
-  color:       #FFF;
+.ProjectDetails_info_section {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:   1vw;
-  margin-top:  4vw;
+  font-size: 1vw;
+  margin-top: 4vw;
 }
 
-.ProjectDetails_info_title{
-  font-style:  italic;
-  text-align:  right;
+.ProjectDetails_info_title {
+  font-style: italic;
+  text-align: right;
 }
 
-.ProjectDetails_media_section{
-  width:   100%;
+.ProjectDetails_media_section {
+  width: 100%;
   position: relative;
   left: 2%;
 }
 
-.ProjectDetails_media_video_wide{
-  width:   24vw;
-  height:  13.5vw;
+.ProjectDetails_media_video_wide {
+  width: 24vw;
+  height: 13.5vw;
 }
 
-.ProjectDetails_media_video_vertical{
-  width:   13.5vw;
-  height:  24vw;
+.ProjectDetails_media_video_vertical {
+  width: 13.5vw;
+  height: 24vw;
 }
 
-.ProjectDetails_media_image{
-  width:   20vw;
+.ProjectDetails_media_image {
+  width: 20vw;
 }
 
-.ProjectDetails_ret_index{
-  font-style:  italic;
-  text-align:  right;
+.ProjectDetails_ret_index {
+  font-style: italic;
+  text-align: right;
   color: rgb(134, 116, 39);
 }
 
-.ProjectDetails_ret_index:hover{
-  font-style:  italic;
-  text-align:  right;
+.ProjectDetails_ret_index:hover {
+  font-style: italic;
+  text-align: right;
   font-weight: bold;
   color: rgb(189, 156, 12);
 }
 
-*{
-	box-sizing: border-box;
-}
-
-.mark_text{
-  background-color: rgba(105, 105, 105, 0.281);
-  color:rgb(240, 240, 240);
-}
-
-/*//////////////////  SMALL DISPLAYS ////////////////////// */
-
-/* Profile section */
-
-@media only screen and (orientation:portrait){
-  header{
-    color:       #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:  center;
-    font-size:   7vh;
-    display:     flex;
-    width: 96%;
-  }
-
-  .Profile_container{
-    width:       50%;
-    margin-left: 4%;
-    margin-top:  2%;
-    display:     flex;
-  }
-  
-  .ContactAndMedia_container{
-    width:       auto;
-    margin-left: 2%;
-    margin-top:  4vw;
-    flex:        1;
-  }
-
-  .ContactAndMedia_img{
-    height:   6vw;
-   }
-  
-  .Profile_name{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    left;
-    font-size:     5vw;
-    font-weight:   bold;
-    margin-top:    2.8vw;
-  }
-  
-  .Profile_career{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    left;
-    font-size:     3vw;
-    margin-top:    -4.4vw;
-  }
-  
-  .Profile_img{
-    width:         20vw;
-    float:         left;
-    border-radius: 6%;
-  }
-
-  /* About me section */
-
-  .AboutMe_container{
-    margin-top: 2vw;
-    width: 96%;
-  }
-
-  .AboutMe_text_header{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    center;
-    font-size:     3vw;
-    font-weight:   bold;
-  }
-
-  .AboutMe_text{
-    text-align:  center;
-    color:       #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:   2vh;
-    margin-top:  -2.2vw;
-  }
-
-  .Carousel_container{
-    width:  100%;
-    height: 58vw;
-  }
-  
-  .Carousel_card{
-    min-width:         92vw;
-    height:            56vw;
-    scroll-snap-align: start;
-    display:           block;
-    justify-content:   center;
-    align-items:       center;
-    background:        rgba(0, 0, 0, 0);
-    color:             #4a544c;
-    border-radius:     1%;
-  }
-  
-  .Carousel_button_prev{
-    cursor:          pointer;
-    position:        relative;
-    top:             -52%;
-    width:           auto;
-    margin-top:      1px;
-    padding:         16px;
-    color:           white;
-    font-weight:     bold;
-    font-size:       18px;
-    transition:      0.6s ease;
-    border-radius:   0 3px 3px 0;
-    user-select:     none;
-    text-decoration: none;
-    margin-left:     2%;
-  }
-  
-  .Carousel_button_next{
-    cursor:          pointer;
-    position:        relative;
-    top:             -62%;
-    width:           auto;
-    margin-top:      1px;
-    padding:         16px;
-    color:           white;
-    font-weight:     bold;
-    font-size:       18px;
-    transition:      0.6s ease;
-    border-radius:   0 3px 3px 0;
-    user-select:     none;
-    text-decoration: none;
-    margin-left:     92%;
-  }
-  
-  /* Projects section */
-
-  .Projects_container{
-    margin-top: -4vw;
-    width: 96%;
-  }
-
-  .Projects_text_header{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    center;
-    font-size:     3vw;
-    font-weight:   bold;
-  }
-
-  .Projects_text{
-    text-align:  center;
-    color:       #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:   2vh;
-    margin-top:  -2.2vw;
-  }
-
-  .ProjectsCarousel_container{
-    width:  100%;
-    height: 58vw;
-    position: relative;
-    top: -0.6vw;
-  }
-
-  .ProjectsCarousel_card{
-    min-width:         92vw;
-    height:            56vw;
-    scroll-snap-align: start;
-    display:           block;
-    justify-content:   center;
-    align-items:       center;
-    background:        rgba(0, 0, 0, 0);
-    color:             #4a544c;
-    border-radius:     1%;
-  }
-
-  .ProjectsCarousel_button_prev{
-    cursor:          pointer;
-    position:        relative;
-    top:             -52%;
-    width:           auto;
-    margin-top:      1px;
-    padding:         16px;
-    color:           white;
-    font-weight:     bold;
-    font-size:       18px;
-    transition:      0.6s ease;
-    border-radius:   0 3px 3px 0;
-    user-select:     none;
-    text-decoration: none;
-    margin-left:     2%;
-  }
-
-  .ProjectsCarousel_button_next{
-    cursor:          pointer;
-    position:        relative;
-    top:             -62%;
-    width:           auto;
-    margin-top:      1px;
-    padding:         16px;
-    color:           white;
-    font-weight:     bold;
-    font-size:       18px;
-    transition:      0.6s ease;
-    border-radius:   0 3px 3px 0;
-    user-select:     none;
-    text-decoration: none;
-    margin-left:     92%;
-  }
-
-  /* Education section */
-
-  .Education_container{
-    width:      87.5%;
-    margin-top: -4vw;
-  }
-
-  .Education_text_header{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    center;
-    font-size:     3vw;
-    font-weight:   bold;
-  }
-
-  .Badge_container{
-    position: relative;
-    width:    100%;
-    display:  block;
-  }
-
-  .Badge_card{
-    color:    #4a544c;
-    position: relative;
-    width:    94%;
-    display:  block;
-    margin-top: 6vw;;
-  }
-
-  .Badge_image{
-    color:    #4a544c;
-    height:   32vw;
-    position: relative;
-    left:     16%;
-  }
-
-  .Badge_text{
-    color:      #FFF;
-    text-align: center;
-    position:   relative;
-    top:        6%;
-    font-style: italic;
-    size:       6vw;
-  }
-
-  /* Backgroudn attribution */
-
-  .BackgroundAttrib_container{
-    width:      96%;
-    margin-top: 12vw;
-    display:    inline-block;
-  }
-
-  .BackgroundAttrib_text{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    center;
-    font-size:     2vw;
-    font-style:    italic;
-  }
-
-  /* Styles for individual projects pages */
-
-  .ProjectDetails_header{
-    width:      96%;
-    text-align: center;
-  }
-
-  .ProjectDetails_title{
-    color:         #FFF;
-    font-family:   Verdana, Geneva, Tahoma, sans-serif;
-    text-align:    center;
-    font-size:     6vw;
-    font-style:    italic;
-    font-weight:   bold;
-  }
-
-  .ProjectDetails_info_container{
-    width:   96%;
-    display: flex;
-  }
-
-  .ProjectDetails_info_section{
-    position:    relative;
-    width:       96%;
-    text-align:  right;
-    color:       #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:   5vw;
-    margin-top:  4vw;
-  }
-
-  .ProjectDetails_info_title{
-    font-style:  italic;
-    text-align:  right;
-  }
-
-  .ProjectDetails_media_section{
-    width:    96%;
-    position: relative;
-    left:     2%;
-  }
-
-  .ProjectDetails_media_video_wide{
-    width:   23vh;
-    height:  32vh;
-  }
-
-  .ProjectDetails_media_video_vertical{
-    width:   22.5vh;
-    height:  40vh;
-  }
-
-  .ProjectDetails_media_image{
-    width:   25vh;
-  }
+* {
+  box-sizing: border-box;
 }

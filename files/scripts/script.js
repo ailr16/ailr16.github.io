@@ -1,10 +1,10 @@
 //Scripts for carousels
 
-const listOfCardElements = document.querySelectorAll('.Carousel_card');
-const cardContainer      = document.querySelector('.Carousel_card_container');
+const listOfCardElements = document.querySelectorAll('.AboutMe_container_carouselContainer_cardContainer_card');
+const cardContainer      = document.querySelector('.AboutMe_container_carouselContainer_cardContainer');
 
 function Carousel_move_slide(direction) {
-  const container = document.querySelector('.Carousel_card_container');
+  const container = document.querySelector('.AboutMe_container_carouselContainer_cardContainer');
   const scrollAmount = 400; // Adjust this value based on your card width
 
   if (direction === -1) {
@@ -14,11 +14,11 @@ function Carousel_move_slide(direction) {
   }
 }
 
-const listOfProjectsCardElements = document.querySelectorAll('.ProjectsCarousel_card');
-const projectsCardContainer      = document.querySelector('.ProjectsCarousel_card_container');
+const listOfProjectsCardElements = document.querySelectorAll('.Projects_container_carouselContainer_cardContainer_card');
+const projectsCardContainer      = document.querySelector('.Projects_container_carouselContainer_cardContainer');
 
 function ProjectsCarousel_move_slide(direction) {
-  const container = document.querySelector('.ProjectsCarousel_card_container');
+  const container = document.querySelector('.Projects_container_carouselContainer_cardContainer');
   const scrollAmount = 400; // Adjust this value based on your card width
 
   if (direction === -1) {
