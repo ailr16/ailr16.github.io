@@ -86,19 +86,15 @@ header {
 }
 
 .Profile_container_contactAndMedia {
-  width: 100%;
-  height: fit-content;
-  margin-top: -2%;
-  text-align: center;
   
-}
-
-.Profile_container_contactAndMedia_content {
-  margin-left: 0%;
+  text-align: center;
+  margin-top: -2%; 
+  margin-bottom: 2%;
 }
 
 .Profile_container_contactAndMedia_content_icon {
-  height: 1.6vw;
+  height: 3vh;
+  display: inline-block;
 }
 
 /* ////// END profile header ////// */
