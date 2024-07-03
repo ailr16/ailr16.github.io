@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
 }
 
 /* Links */
@@ -39,19 +40,19 @@ a {
 
 /* Text style for name and job title */
 header {
+  width: 100%;
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 7vh;
-  display: flex;
 }
 
 /* Text style for name and job title */
 .Profile_container {
-  width: 40%;
-  margin-left: 16%;
-  margin-top: 2%;
-  display: flex;
+  width: 100%;
+  margin-top: 1%;
+  display: inline-block;
+  text-align: center;
 }
 
 /* Profile image */
@@ -60,47 +61,44 @@ header {
 }
 
 .Profile_container_imgContainer_img {
-  width: 6vw;
-  float: left;
-  border-radius: 8%;
+  width: 12%;
+  border-radius: 50%;
 }
 
 .Profile_container_id {
-  flex-grow: 1;
-  margin-left: 2%;
+  margin-top: -1.6vw;
 }
 
 .Profile_container_id_name {
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
-  font-size: 2vw;
+  text-align: center;
+  font-size: 1.8vw;
   font-weight: bold;
-  margin-top: 1.4vw;
 }
 
 .Profile_container_id_career {
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
-  font-size: 1.2vw;
-  margin-top: -2vw;
+  text-align: center;
+  font-size: 1.1vw;
+  margin-top: -1.6vw;
 }
 
 .Profile_container_contactAndMedia {
-  width: auto;
-  margin-left: 2%;
-  margin-top: 4vw;
-  flex: 1;
+  width: 100%;
+  height: fit-content;
+  margin-top: -2%;
+  text-align: center;
+  
 }
 
 .Profile_container_contactAndMedia_content {
-  margin-left: 1%;
-  margin-top: -1vh;
+  margin-left: 0%;
 }
 
 .Profile_container_contactAndMedia_content_icon {
-  height: 2.1vw;
+  height: 1.6vw;
 }
 
 /* ////// END profile header ////// */
