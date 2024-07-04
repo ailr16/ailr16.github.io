@@ -35,12 +35,19 @@ a {
 /*******************************************************/
 
 .AboutMe_header {
-  height: auto;
+  height: 100%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 100%;
-  background-color: #384246;
+  font-size: 2.2vh;
+  font-style: italic;
+  background-color: #231653;
   color: #FFF;
+}
+
+.AboutMe_header:hover {
+  background-color: #2a1a63;
+  color: #cf0287;
+  cursor: pointer;
 }
 
 .AboutMe_content {
@@ -48,7 +55,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #89714E;
+  background-color: #231653;
   color: #FFF;
   display: none;
   overflow: hidden;
@@ -59,9 +66,16 @@ a {
   height: auto;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 100%;
-  background-color: #384246;
+  font-size: 2.2vh;
+  font-style: italic;
+  background-color: #20a7c5;
   color: #FFF;
+}
+
+.Projects_header:hover {
+  background-color: #24bbdd;
+  color: #cf0287;
+  cursor: pointer;
 }
 
 .Projects_content {
@@ -69,7 +83,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #89714E;
+  background-color: #20a7c5;
   color: #FFF;
   display: none;
   overflow: hidden;
@@ -80,9 +94,16 @@ a {
   height: auto;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 100%;
-  background-color: #384246;
+  font-size: 2.2vh;
+  font-style: italic;
+  background-color: #012657;
   color: #FFF;
+}
+
+.Education_header:hover {
+  background-color: #002b63;
+  color: #cf0287;
+  cursor: pointer;
 }
 
 .Education_content {
@@ -90,13 +111,27 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #89714E;
+  background-color: #012657;
   color: #FFF;
   display: none;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 
+.Card_container {
+  width: 100%;
+}
+
+.Card_container_img{
+  width: 32%;
+}
+
+.Card_container_vid{
+  position: relative;
+  height: 100%;
+  height: auto;
+  top: 5%;
+}
 /******************** Index Styles *********************/
 
 /* ////// All related to profile header ////// */
@@ -108,6 +143,7 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 7vh;
+  margin-bottom: 2%;
 }
 
 /* Text style for name and job title */
@@ -160,12 +196,20 @@ header {
   display: inline-block;
 }
 
+.Profile_container_summary {
+  color: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2vh;
+}
+
 /* ////// END profile header ////// */
 
 
 /* ////// All related to About Me section ////// */
 
 /* About me section */
+/*
 .AboutMe_container {
   margin-top: 1vw;
 }
@@ -286,13 +330,14 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 90%;
   font-style: italic;
-}
+}*/
 
 /* ////// END About Me ////// */
 
 
 /* ////// All related to Projects section ////// */
-.Projects_container {
+
+/*.Projects_container {
   margin-top: -0.6vw;
 }
 
@@ -418,13 +463,14 @@ header {
 
 p {
   text-align: justify;
-}
+}*/
 
 /* ////// END Projects ////// */
 
 
 
 /* ////// All related to Projects section ////// */
+/*
 .Education_container {
   width: 100%;
   margin-top: 1vw;
@@ -466,6 +512,7 @@ p {
   top: 6%;
   font-style: italic;
 }
+  */
 
 /* ////// END Education ////// */
 
