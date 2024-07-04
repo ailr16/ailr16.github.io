@@ -50,6 +50,9 @@ a {
   font-size: 100%;
   background-color: #89714E;
   color: #FFF;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .Projects_header {
@@ -68,6 +71,9 @@ a {
   font-size: 100%;
   background-color: #89714E;
   color: #FFF;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .Education_header {
@@ -86,6 +92,9 @@ a {
   font-size: 100%;
   background-color: #89714E;
   color: #FFF;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 /******************** Index Styles *********************/
