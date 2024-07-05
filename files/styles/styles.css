@@ -91,6 +91,7 @@ a {
 
 .Projects_content {
   height: auto;
+  border-radius: 2vh;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
@@ -124,6 +125,7 @@ a {
 
 .Education_content {
   height: auto;
+  border-radius: 2vh;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
