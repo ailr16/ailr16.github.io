@@ -32,6 +32,21 @@ a {
   height: 3vh;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8d8d8d8e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8f8f8fbd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #55555588;
+}
 /*******************************************************/
 
 .AboutMe_header {
@@ -210,14 +225,14 @@ header {
 }
 
 .Profile_container_id {
-  margin-top: -1.6vw;
+  margin-top: -3vh;
 }
 
 .Profile_container_id_name {
   color: #eeeeee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 1.8vw;
+  font-size: 3.4vh;
   font-weight: bold;
 }
 
@@ -225,19 +240,18 @@ header {
   color: #eeeeee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 1.1vw;
-  margin-top: -1.6vw;
+  font-size: 2.2vh;
+  margin-top: -3vh;
 }
 
 .Profile_container_contactAndMedia {
-  
   text-align: center;
-  margin-top: -2%; 
-  margin-bottom: 2%;
+  margin-top: -3.4vh; 
+  margin-bottom: 2vh;
 }
 
 .Profile_container_contactAndMedia_content_icon {
-  height: 2.9vh;
+  height: 2.8vh;
   display: inline-block;
 }
 
@@ -249,317 +263,6 @@ header {
 }
 
 /* ////// END profile header ////// */
-
-
-/* ////// All related to About Me section ////// */
-
-/* About me section */
-/*
-.AboutMe_container {
-  margin-top: 1vw;
-}
-
-.AboutMe_container_sectionTitle {
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 0.9vw;
-  font-weight: bold;
-}
-
-.AboutMe_container_text {
-  text-align: center;
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.2vh;
-  margin-top: -0.9vw;
-}
-
-.AboutMe_container_carouselContainer {
-  width: 100%;
-  height: 260px;
-}
-
-.AboutMe_container_carouselContainer_cardContainer {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 8px;
-  width: calc(100% - 16px);
-  margin: 8px;
-  flex: 0 0 calc(100% - 16px);
-}
-
-.AboutMe_container_carouselContainer_cardContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.AboutMe_container_carouselContainer_cardContainer_card {
-  min-width: 384px;
-  height: 240px;
-  scroll-snap-align: start;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0);
-  color: #4a544c;
-  border-radius: 1%;
-}
-
-.AboutMe_container_carouselContainer_cardContainer_card:hover {
-  background: rgba(167, 143, 8, 0.63);
-}
-
-.AboutMe_container_carouselContainer_buttonPrev {
-  cursor: pointer;
-  position: relative;
-  top: -52%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-  margin-left: 1%;
-}
-
-.AboutMe_container_carouselContainer_buttonNext {
-  cursor: pointer;
-  position: relative;
-  top: -60%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-  margin-left: 97%;
-}
-
-.AboutMe_container_carouselContainer_buttonPrev:hover,
-.AboutMe_container_carouselContainer_buttonNext:hover {
-  background-color: rgba(35, 14, 92, 0.664);
-}
-
-.AboutMe_container_carouselContainer_cardContainer_card_img {
-  position: relative;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-}
-
-.AboutMe_container_carouselContainer_cardContainer_card_vid {
-  position: relative;
-  width: 89%;
-  height: 80%;
-  left: 5%;
-  top: 5%;
-}
-
-.AboutMe_container_carouselContainer_cardContainer_card_text {
-  width: 100%;
-  position: relative;
-  text-align: center;
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 90%;
-  font-style: italic;
-}*/
-
-/* ////// END About Me ////// */
-
-
-/* ////// All related to Projects section ////// */
-
-/*.Projects_container {
-  margin-top: -0.6vw;
-}
-
-.Projects_container_sectionTitle {
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 0.9vw;
-  font-weight: bold;
-}
-
-.Projects_text {
-  text-align: center;
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.2vh;
-  margin-top: -0.9vw;
-}
-
-.Projects_container_carouselContainer {
-  width: 100%;
-  height: 260px;
-  position: relative;
-  top: -0.6vw;
-}
-
-.Projects_container_carouselContainer_cardContainer {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  gap: 8px;
-  width: calc(100% - 16px);
-  margin: 8px;
-  flex: 0 0 calc(100% - 16px);
-}
-
-.Projects_container_carouselContainer_cardContainer::-webkit-scrollbar {
-  display: none;
-}
-
-.Projects_container_carouselContainer_cardContainer_card {
-  min-width: 384px;
-  height: 240px;
-  scroll-snap-align: start;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0);
-  color: #4a544c;
-  border-radius: 1%;
-}
-
-.Projects_container_carouselContainer_cardContainer_card:hover {
-  background: rgba(167, 143, 8, 0.63);
-}
-
-.Projects_container_carouselContainer_cardContainer_buttonPrev {
-  cursor: pointer;
-  position: relative;
-  top: -47%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-  margin-left: 1%;
-}
-
-.Projects_container_carouselContainer_cardContainer_buttonNext {
-  cursor: pointer;
-  position: relative;
-  top: -55%;
-  width: auto;
-  margin-top: 1px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-  margin-left: 97%;
-}
-
-.Projects_container_carouselContainer_cardContainer_buttonPrev:hover,
-.Projects_container_carouselContainer_cardContainer_buttonNext:hover {
-  background-color: rgba(35, 14, 92, 0.664);
-}
-
-.Projects_container_carouselContainer_cardContainer_card_img {
-  position: relative;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-}
-
-.Projects_container_carouselContainer_cardContainer_card_vid {
-  position: relative;
-  width: 89%;
-  height: 80%;
-  left: 5%;
-  top: 5%;
-}
-
-.Projects_container_carouselContainer_cardContainer_card_text {
-  width: 100%;
-  position: relative;
-  text-align: center;
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 90%;
-  font-style: italic;
-}
-
-p {
-  text-align: justify;
-}*/
-
-/* ////// END Projects ////// */
-
-
-
-/* ////// All related to Projects section ////// */
-/*
-.Education_container {
-  width: 100%;
-  margin-top: 1vw;
-  display: inline-block;
-}
-
-.Education_container_title {
-  color: #FFF;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 0.9vw;
-  font-weight: bold;
-}
-
-.Education_container_badgeContainer {
-  position: relative;
-  width: 100%;
-  display: flex;
-  left: 5%;
-}
-
-.Education_container_badgeContainer_card {
-  color: #4a544c;
-  position: relative;
-  width: 15%;
-}
-
-.Education_container_badgeContainer_card_img {
-  color: #4a544c;
-  height: 6vw;
-  position: relative;
-  left: 16%;
-}
-
-.Education_container_badgeContainer_card_text {
-  color: #FFF;
-  text-align: center;
-  position: relative;
-  top: 6%;
-  font-style: italic;
-}
-  */
-
-/* ////// END Education ////// */
 
 /* Background attribution */
 .BackgroundAttrib_container {
