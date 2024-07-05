@@ -49,17 +49,22 @@ a {
 }
 /*******************************************************/
 
-.AboutMe_header {
-  height: auto;
-  width: 56%;
-  display: inline-block;
-  border-radius: 1vh;
-  text-align: center;
+.Section_header_text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #231653d5;
   color: #eeeeee;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+.AboutMe_header {
+  height: auto;
+  width: 66%;
+  display: inline-block;
+  border-radius: 1vh;
+  text-align: center;
+  background-color: #231653d5;
 }
 
 .AboutMe_header:hover {
@@ -85,7 +90,7 @@ a {
 
 .Projects_header {
   height: auto;
-  width: 56%;
+  width: 66%;
   display: inline-block;
   border-radius: 1vh;
   text-align: center;
@@ -110,7 +115,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #20a7c5d5;
+  background-color: #2092acd5;
   color: #eeeeee;
   display: none;
   overflow: hidden;
@@ -119,7 +124,7 @@ a {
 
 .Education_header {
   height: auto;
-  width: 56%;
+  width: 66%;
   display: inline-block;
   border-radius: 1vh;
   text-align: center;
@@ -267,7 +272,7 @@ header {
 /* Background attribution */
 .BackgroundAttrib_container {
   width: 100%;
-  margin-top: 2vw;
+  margin-top: 3vh;
   display: inline-block;
 }
 
@@ -275,7 +280,7 @@ header {
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 0.6vw;
+  font-size: 1vh;
   font-style: italic;
 }
 
