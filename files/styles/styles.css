@@ -22,7 +22,7 @@ a {
 }
 
 .mark_text {
-  background-color: rgba(105, 105, 105, 0.281);
+  background-color: rgba(121, 121, 121, 0.281);
   color: rgb(240, 240, 240);
 }
 
@@ -101,7 +101,7 @@ a {
 }
 
 .Education_header:hover {
-  background-color: #002b63;
+  background-color: #013374;
   color: #cf0287;
   cursor: pointer;
 }
@@ -120,17 +120,36 @@ a {
 
 .Card_container {
   width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
 }
 
 .Card_container_img{
-  width: 26%;
+  width: 39vh;
+  display:inline;
+}
+
+.Card_container_text{
+  width: 40%;
+  display: inline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.1vh;
 }
 
 .Card_container_vid{
   position: relative;
+  width: 39vh;
+  height: 22vh;
+}
+
+.Card_container_vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  height: auto;
-  top: 5%;
 }
 
 .Card_container_badge {
