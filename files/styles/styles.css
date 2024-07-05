@@ -58,12 +58,12 @@ a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #231653;
+  background-color: #231653d5;
   color: #eeeeee;
 }
 
 .AboutMe_header:hover {
-  background-color: #2a1a63;
+  background-color: #2a1a63d5;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -76,7 +76,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #231653;
+  background-color: #231653d5;
   color: #eeeeee;
   display: none;
   overflow: hidden;
@@ -92,12 +92,12 @@ a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #20a7c5;
+  background-color: #2092acd5;
   color: #eeeeee;
 }
 
 .Projects_header:hover {
-  background-color: #24bbdd;
+  background-color: #23a1bdd5;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -110,7 +110,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #20a7c5;
+  background-color: #20a7c5d5;
   color: #eeeeee;
   display: none;
   overflow: hidden;
@@ -126,12 +126,12 @@ a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #012657;
+  background-color: #012657d5;
   color: #eeeeee;
 }
 
 .Education_header:hover {
-  background-color: #013374;
+  background-color: #013374d5;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -144,7 +144,7 @@ a {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #012657;
+  background-color: #012657d5;
   color: #FFF;
   display: none;
   overflow: hidden;
@@ -220,7 +220,7 @@ header {
 }
 
 .Profile_container_imgContainer_img {
-  width: 12%;
+  width: 18vh;
   border-radius: 50%;
 }
 
