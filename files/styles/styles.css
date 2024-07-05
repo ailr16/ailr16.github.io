@@ -3,7 +3,6 @@
 */
 
 /******** General Styles (Applies for all pages) ********/
-
 .html,
 body {
   scroll-behavior: smooth;
@@ -47,6 +46,76 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #55555588;
 }
+/*******************************************************/
+
+/* ////// All related to profile header ////// */
+
+/* Text style for name and job title */
+header {
+  width: 100%;
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 7vh;
+  margin-bottom: 2%;
+}
+
+/* Text style for name and job title */
+.Profile_container {
+  width: 100%;
+  margin-top: 1%;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Profile image */
+.Profile_container_imgContainer {
+  flex-shrink: 0;
+}
+
+.Profile_container_imgContainer_img {
+  width: 18vh;
+  border-radius: 50%;
+}
+
+.Profile_container_id {
+  margin-top: -3vh;
+}
+
+.Profile_container_id_name {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 3.4vh;
+  font-weight: bold;
+}
+
+.Profile_container_id_career {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2vh;
+  margin-top: -3vh;
+}
+
+.Profile_container_contactAndMedia {
+  text-align: center;
+  margin-top: -3.4vh; 
+  margin-bottom: 2vh;
+}
+
+.Profile_container_contactAndMedia_content_icon {
+  height: 2.8vh;
+  display: inline-block;
+}
+
+.Profile_container_summary {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2vh;
+}
+
 /*******************************************************/
 
 .Section_header_text {
@@ -196,75 +265,6 @@ a {
   position: relative;
   left: 30%;
   display: flex;
-}
-/******************** Index Styles *********************/
-
-/* ////// All related to profile header ////// */
-
-/* Text style for name and job title */
-header {
-  width: 100%;
-  color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 7vh;
-  margin-bottom: 2%;
-}
-
-/* Text style for name and job title */
-.Profile_container {
-  width: 100%;
-  margin-top: 1%;
-  display: inline-block;
-  text-align: center;
-}
-
-/* Profile image */
-.Profile_container_imgContainer {
-  flex-shrink: 0;
-}
-
-.Profile_container_imgContainer_img {
-  width: 18vh;
-  border-radius: 50%;
-}
-
-.Profile_container_id {
-  margin-top: -3vh;
-}
-
-.Profile_container_id_name {
-  color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 3.4vh;
-  font-weight: bold;
-}
-
-.Profile_container_id_career {
-  color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 2.2vh;
-  margin-top: -3vh;
-}
-
-.Profile_container_contactAndMedia {
-  text-align: center;
-  margin-top: -3.4vh; 
-  margin-bottom: 2vh;
-}
-
-.Profile_container_contactAndMedia_content_icon {
-  height: 2.8vh;
-  display: inline-block;
-}
-
-.Profile_container_summary {
-  color: #eeeeee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  font-size: 2vh;
 }
 
 /* ////// END profile header ////// */
