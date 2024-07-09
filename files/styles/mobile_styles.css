@@ -1,0 +1,51 @@
+/*//////////////////  SMALL DISPLAYS ////////////////////// */
+
+/* Profile section */
+
+@media only screen and (orientation:portrait){
+    .Card_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 22vh;
+        position: relative;
+    }
+      
+    .Card_container_img{
+        width: 39vh;
+        height: 22vh;
+        position: relative;
+    }
+      
+    .Card_container_text{
+        width: 100%;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;
+        top: 21vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+      
+    .Card_container_vid{
+        position: relative;
+        width: 39vh;
+        height: 22vh;
+    }
+      
+    .Card_container_vid iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+      
+    .Card_container_badge {
+        color: #4a544c;
+        height: 16vh;
+        position: relative;
+        left: 30%;
+        display: flex;
+    }
+}
