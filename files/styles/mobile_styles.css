@@ -7,9 +7,25 @@
         width: 100%;
         height: auto;
         display: flex;
-        margin-bottom: 22vh;
+        margin-bottom: 18vh;
         position: relative;
     }
+
+    .Card_container_longer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 28vh;
+        position: relative;
+    }
+
+    .Card_container_longer_longer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 38vh;
+        position: relative;
+     }
       
     .Card_container_img{
         width: 39vh;
