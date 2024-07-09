@@ -21,7 +21,7 @@ a {
 }
 
 .mark_text {
-  background-color: rgba(121, 121, 121, 0.281);
+  background-color: rgba(104, 103, 103, 0.514);
   color: rgb(240, 240, 240);
 }
 
@@ -133,11 +133,11 @@ header {
   display: inline-block;
   border-radius: 1vh;
   text-align: center;
-  background-color: #231653d5;
+  background-color: #231653b1;
 }
 
 .AboutMe_header:hover {
-  background-color: #2a1a63d5;
+  background-color: #2a1a63b1;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -150,7 +150,7 @@ header {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #231653d5;
+  background-color: #231653b1;
   color: #eeeeee;
   display: none;
   overflow: hidden;
@@ -166,12 +166,12 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #2092acd5;
+  background-color: #2092acb1;
   color: #eeeeee;
 }
 
 .Projects_header:hover {
-  background-color: #23a1bdd5;
+  background-color: #23a1bdb1;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -184,7 +184,7 @@ header {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #2092acd5;
+  background-color: #2092acb1;
   color: #eeeeee;
   display: none;
   overflow: hidden;
@@ -200,12 +200,12 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.2vh;
   font-style: italic;
-  background-color: #012657d5;
+  background-color: #012657b1;
   color: #eeeeee;
 }
 
 .Education_header:hover {
-  background-color: #013374d5;
+  background-color: #013374b1;
   color: #cf0287;
   cursor: pointer;
   border-style:solid;
@@ -218,7 +218,7 @@ header {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  background-color: #012657d5;
+  background-color: #012657b1;
   color: #FFF;
   display: none;
   overflow: hidden;
@@ -242,7 +242,9 @@ header {
   width: 40%;
   display: inline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.1vh;
+  font-size: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
 }
 
 .Card_container_vid{
