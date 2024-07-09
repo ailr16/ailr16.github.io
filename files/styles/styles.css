@@ -23,6 +23,7 @@ a {
 .mark_text {
   background-color: rgba(104, 103, 103, 0.514);
   color: rgb(240, 240, 240);
+  margin-bottom: 0.5vh;
 }
 
 /* MX flag gif */
@@ -270,6 +271,12 @@ header {
   display: flex;
 }
 
+.Card_container_text_info{
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.4vh;
+}
+
 /* ////// END profile header ////// */
 
 /* Background attribution */
@@ -318,11 +325,6 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1vw;
   margin-top: 4vw;
-}
-
-.ProjectDetails_info_title {
-  font-style: italic;
-  text-align: right;
 }
 
 .ProjectDetails_media_section {
