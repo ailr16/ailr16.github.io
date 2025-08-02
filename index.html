@@ -13,15 +13,15 @@
 
 		<title>Angel Lozano - Portfolio</title>
 	
-		<link rel="shortcut icon" href="./files/img/favicon.ico"                  type="image/x-icon">
-		<link rel="icon"          href="./files/img/favicon.ico"                  type="image/x-icon">
-		<link rel="stylesheet"    href="./files/styles/styles.css">
-		<link rel="stylesheet"    href="./files/styles/mobile_styles.css">
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+		<link rel="icon"          href="./img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet"    href="./css/styles.css">
+		<link rel="stylesheet"    href="./css/mobile_styles.css">
 	</head>
 
 	<style>
 		body{
-			background: linear-gradient( rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66) ),url(./files/img/bgx.jpg);
+			background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(./img//background_fractal.jpg);
 			background-position:   center center;
 			background-repeat:     no-repeat;
 			background-attachment: fixed;
@@ -31,351 +31,59 @@
 	</style>
 
 	<header>
-		<div id="Profile_container" class="Profile_container">
-			<div class="Profile_container_imgContainer">
-				<img class="Profile_container_imgContainer_img" src="./files/img/mii.png"/>
+		<section id="MyProfile" class="Header_profileContainer">
+			<div class="profileContainer_imgContainer">
+				<img class="profileContainer_imgContainer_img" src="./img/mii.png"/>
 			</div>
 
-			<div class="Profile_container_id">
-				<p class="Profile_container_id_name">Angel Lozano</p>
-				<p class="Profile_container_id_career">Software Engineer</p>
+			<div class="profileContainer_nameCareer">
+				<p class="profileContainer_name">Angel Lozano</p>
+				<p class="profileContainer_career">Software Engineer</p>
 			</div>
-		</div>
-		
-		<div class="Profile_container_contactAndMedia">
-			<a title="LinkedIn" href="http://www.linkedin.com/in/ailr16/" target="_blank">
-				<img class="Profile_container_contactAndMedia_content_icon"
-					  src="./files/img/contact/icon_linkedin.png"></a> 
 
-
-			<a title="GitHub" href="https://github.com/ailr16" target="_blank">
-				<img class="Profile_container_contactAndMedia_content_icon"
-					 src="./files/img/contact/icon_github.png"></a>
-				
-			<a title="YouTube" href="https://www.youtube.com/channel/UCJ5MFm2qRBsL5Vf8Yft5vpw" target="_blank">
-				<img class="Profile_container_contactAndMedia_content_icon"
-					 src="./files/img/contact/icon_youtube.png"></a> 
-						 
-			<a title="Instagram" href="https://www.instagram.com/ailr16/" target="_blank">
-				<img class="Profile_container_contactAndMedia_content_icon"
-					 src="./files/img/contact/icon_instagram.png"></a>
-		</div>
-
-		<div class="Profile_container_summary">
-			Hi, I am a 25y old Electrical Engineer, with a minor in<br>
-			Electronics and Communications and a Mechatronics Associate Degree.<br><br>
-			I worked at Intel Corporation, as System Validation Associate,<br>
-			performing stress tests on different components of the SoC<br>
-			(like the CPU itself, PCH, PCIe ports, Network ports and memory channels)<br>
-			to take the voltage regulators to the limit.<br><br>
-			I've worked as an Embedded Software Engineer, developing projects using<br>
-			STM32 microcontrollers. Also, I've worked in projects using Yocto to build<br>
-			Embedded Linux images for Raspberry Pi 4.<br><br>
-			I have experience in fields like Embedded Systems, Robotics, Industrial Automation,<br>
-			3D Design (CAD, Solidworks), 3D Printing and Game development with Unity 3d and<br>
-			Unreal Engine.<br>
-			<img class="Flag_gif" src="./files/img/mexicoFlag.gif">
-		</div>
+			<div class="profileContainer_menu">
+				<hr>
+				<nav class="profileContainer_menu_nav">
+					<a href="#AboutMe">About Me</a>
+					<a href="#Projects">Projects</a>
+					<a href="#ContactAndSocialMedia">Reach out</a>
+				</nav>
+				<hr>
+			</div>
+		</section>
 	</header>
 
 	<body>
-		<div id="AboutMe_header" class="AboutMe_header" onclick="toggleAboutMe()">
-			<div class="Section_header_text">
-				About Me
-			</div>
-		</div>
+		<section id="AboutMe">
+			<h1>About Me</h1>
+			<p>Ingeniero de ideas, hacker de la curiosidad. Diseño soluciones inteligentes desde sensores hasta sistemas embebidos.</p>
+			<a href="#proyectos">Ver proyectos</a> <a href="#contacto">Contáctame</a>
+		</section>
 
-		<div id="AboutMe_content" class="AboutMe_content">
-			<div class="Card_container">
-				<iframe class="Card_container_vid"
-						src="https://www.youtube.com/embed/CHRtNuWc8CI"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen></iframe>
-				<div class="Card_container_text">
-					<p class="mark_text">2012 - Brick Breaker game with Unity Engine</p>
-					Here starts my Software development career, just for learning purposes,
-					I was introduced to OOP with C# developement.
-				</div>
+		<section id="Projects">
+			<h2>My Projects</h2>
+			<div class="card">
+				<img src="inmoov.jpg" alt="InMoov + Neurosky">
+				<h3>Control mental de brazo robótico</h3>
+				<p>Combina bioseñales con programación embebida en Arduino.</p>
+				<span>#Robótica #IoT</span>
 			</div>
+		</section>
 
-			<div class="Card_container">
-				<img src="./files/img/carouselAboutMe/vexBall.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">2013 - VEX Robotics Competition (Toss Up Game)</p>
-					In secondary school I was invited to participate in a Robotics Tournament. I was the captain of
-					the team, performing tasks related to the physical design and programming.
-				</div>
+		<section id="ContactAndSocialMedia">
+			<h2>Reach out</h2>
+			<div class="card">
+				<img src="inmoov.jpg" alt="InMoov + Neurosky">
+				<h3>Control mental de brazo robótico</h3>
+				<p>Combina bioseñales con programación embebida en Arduino.</p>
+				<span>#Robótica #IoT</span>
 			</div>
-
-			<div class="Card_container_longer">
-				<iframe class="Card_container_vid"
-						src="https://www.youtube.com/embed/jXCSVh1KY0g"
-						title="YouTube video player"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-				</iframe>
-				<div class="Card_container_text">
-					<p class="mark_text">2013 - VEX Robotics Competition (Toss Up Game)</p>
-					I used C language to program the Microcontroller (VEX ARM Cortex). The robot required using
-					outputs for DC motors, and inputs for sensors like photosensors (with LDR), limit and bumper switches.
-					The robot was controlled using a remote Joystick.
-				</div>
-			</div>
-
-			<div class="Card_container">
-				<img src="./files/img/carouselAboutMe/conafe.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Summer School Volunteer (2016)</p>
-					Also, in high school, I got involved in a Volunteer Program helping during summer
-					in a Community Primary School. I was away from my home for a month.
-				</div>
-			</div>
-			
-			<div class="Card_container">
-				<img src="./files/img/carouselAboutMe/conafe2.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Summer School Volunteer (2016)</p>
-					During the program, I developed an activities plan for children related to science
-					with the purpose of strengthening their math and reading skills.
-				</div>
-			</div>
-
-			<div class="Card_container_longer">
-				<img src="./files/img/carouselAboutMe/kosselMini.gif" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Started 3D Printing (2016)</p>
-					In High School, I had an idea that required some techniques that 3d printing could bring. I acuired
-					my first 3d printer: a delta robot-based Kossel Mini. It was a true challenge setting it up (I was
-					16y at that moment) but that was my introduction to new fabrication processes and 3d design.
-				</div>
-			</div>
-
-			<div class="Card_container_longer">
-				<img src="./files/img/carouselAboutMe/automated_cell.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Automating CIM cell (2017)</p>
-					As part of a project required to obtain my Mechatronics Associate Degree, I worked with a team in
-					the automation of a CIM composed by manipulator arm, conveyor belt, CNC mill and a rotary table. We 
-					simulated a milling process, and the only human-supervised required task was putting a wax piece on
-					the conveyor belt.
-				</div>
-			</div>
-
-			<div class="Card_container_longer">
-				<img src="./files/img/carouselProjects/nspire.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">TI-Nspire Calculator Programming Blog (2017)</p>
-					This is a blog I created with resources for TI-Nspire CX calculators programming, using its
-					native language TI-BASIC. There're some examples from basic to advanced complexity (as evaluating
-					Pythagorean theorem or getting the Trigonometric series for discontinuous functions).
-					<a title="TI-Nspire Blog" href="https://0x10blog.blogspot.com/" target="_blank">
-						0x10blog.blogspot.com
-					</a>
-				</div>
-			</div>
-
-		</div>
-
-
-		<div id="Projects_header" class="Projects_header" onclick="toggleProjects()">
-			<div class="Section_header_text">
-				Projects
-			</div>
-		</div>
-
-		<div id="Projects_content" class="Projects_content">			
-			<div class="Card_container_longer">
-				<img src="./files/img/carouselProjects/bodePlotter.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Bode Plotter</p>
-					This project uses a Rigol oscilloscope (DS1054Z)
-					and a FY3224s signal generator to run a frequency response
-					analysis and creating Bode plots. It's coded in Python and
-					tested under Ubuntu and Arch Linux, but it must work in any Operating System.</br></br>
-					<p class="Card_container_text_info">PROJECT REPOSITORY (GitHub):</p></br>
-					<a href="https://github.com/ailr16/BodePlot-DS1054Z" target="_blank">BodePlot-DS1054Z</a>
-				</div>
-			</div>
-
-			<div class="Card_container_longer">
-				<img src="./files/img/carouselProjects/inmoovHand.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">InMoov & Neurosky Mindwave</p>
-					The project consists in a 3d printed robotic hand based
-					on InMoov project which is controlled with attentions levels
-					provided by a Neurosky Mindwave Mobile Headset.
-					Also, I developed an Arduino library for simplifying headset
-					implementation in projects.</br></br>
-					<p class="Card_container_text_info">PROJECTS REPOSITORIES:</p></br>
-					<a href="https://github.com/ailr16/InMoov-Control---AILR" target="_blank">InMoov-Control---AILR</a>
-					<br>
-					<a href="https://github.com/ailr16/mindwave-arduino-tools" target="_blank">mindwave-arduino-tools</a>
-				</div>
-			</div>
-			
-			<div class="Card_container_longer_longer">
-				<img src="./files/img/carouselProjects/pollutionMonitor.png" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Smart Pollution Monitor (Final Degree Project)</p>
-					This is my Degree Final Project and I'm currently working in it
-					with a team. Consist in a device able to measure some kinds of
-					atmospheric pollution such a Particulate Matter and Carbon dioxide,
-					get the position through the GPS and send the data to Cloud Storage.
-					We are using a Raspberry Pi to get, process and send data to internet,
-					applying IoT principles.</br></br>
-					<p class="Card_container_text_info">PROJECT REPOSITORY:</p></br>
-					<a href="https://github.com/ailr16/monitoreoPolucion" target="_blank">Monitoreo Polucion</a>
-				</div>
-			</div>
-
-			<div class="Card_container_longer_longer">
-				<img src="./files/img/carouselProjects/bootRpi.jpg" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Yocto layer for GUI implementation in Raspberry Pi</p>
-					I'm developing a layer for Yocto project useful for implementing GUIs using tkinter for embedded
-					linux images. Until now allows to install packages for enabling X11/Xorg and Wayland/Weston,
-					instals Python modules required by Tkinter, copying the Python scripts with the GUI implementation
-					in the image filesystem. I'm using Docker containers and Python scripts to create an environment
-					for building the Yocto images.</br></br>
-					<p class="Card_container_text_info">PROJECT REPOSITORY:</p></br>
-					<a href="https://github.com/ailr16/meta-rpi-gui" target="_blank">meta-rpi-gui</a>
-				</div>
-			</div>
-
-			<div class="Card_container_longer_longer">
-				<img src="./files/img/carouselProjects/intel_nidaq.png" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Intel - NI DAQ tools for System Validation</p>
-					I've used NI-DAQ systems, developing tools for data acquisition and
-					signal processing using NI-SCOPE and NIDAQmx python modules.
-					Basicaly, using OOP we can configure the system as a oscilloscope
-					(set the sample rate and capture time, select channel, assign it a name,
-					bandwith limiter, probe impedance, probe attenuation, channel gain and
-					polarity, lowpass filter cut frequency and color for plotting).
-					It was used for capture the server boot sequence, measuring multiple
-					signals (more than 8 at same time) which allows to get a big picture of
-					what's happening during the boot.
-				</div>
-			</div>
-
-			<div class="Card_container">
-				<img src="./files/img/carouselProjects/intel_xeonD.png" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Intel - Xeon D Validation (Icelake D)</p>
-					I worked with a team giving the final support of Xeon D 17xx-27xx validation
-					process related to Power consumption.
-				</div>
-			</div>
-
-			<div class="Card_container">
-				<img src="./files/img/carouselProjects/intel_other.png" class="Card_container_img"></p>
-				<div class="Card_container_text">
-					<p class="mark_text">Intel - Other Xeon SOC Validation</p>
-					I worked with a team in the validation process of a New Xeon SOC, using
-					company internal debugging tools and developed tools with NI DAQ.
-					The rest is information which I can't talk about.
-				</div>
-			</div>
-		</div>
-
-
-		<div id="Education_header" class="Education_header" onclick="toggleEducation()">
-			<div class="Section_header_text">
-				Education and Certificates
-			</div>
-		</div>
-
-		<div id="Education_content" class="Education_content">		
-			<div class="Card_container_badge">
-				<a title="License IPN"
-				   href="https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=13737451&idProfesionista=13808292&token=D7AC8BF9BB53EBF3B6540AB4E20B263584895B74"
-				   target="_blank">
-				   <img class="Card_container_badge_img"
-						src="./files/img/education/escudo_ipn.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="License IPN"
-					href="https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=13737451&idProfesionista=13808292&token=D7AC8BF9BB53EBF3B6540AB4E20B263584895B74"
-					target="_blank">Communications and Electronics Engineering | IPN</a>
-				</div>
-			</div>
-			
-			<div class="Card_container_badge">
-				<a title="Mechatronics Technician CBTis 59"
-				href="https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=12315027&idProfesionista=12383516&token=D0F44DFCC0C9E351EE0A51EDE509293FEF5D31AB"
-				target="_blank">
-				<img class="Card_container_badge_img"
-					 src="./files/img/education/cbtis59.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="Mechatronics Technician"
-					href="https://cedulaprofesional.sep.gob.mx/cedula/indexAvanzada.action?idCedula=12315027&idProfesionista=12383516&token=D0F44DFCC0C9E351EE0A51EDE509293FEF5D31AB"
-					target="_blank">Mechatronics Associate | CBTis 59</a>
-				</div>
-			</div>
-
-			<div class="Card_container_badge">
-				<a title="Solidworks Associate"
-				   href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-BD35WRTU8Q"
-				   target="_blank">
-				<img class="Card_container_badge_img"
-					 src="./files/img/certifications/cswa.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="CSWA"
-					href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-BD35WRTU8Q"
-					target="_blank">Solidworks Associate (CSWA)</a>
-				</div>
-			</div>
-
-			
-			<div class="Card_container_badge">
-				<a title="AZ-900"
-				   href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=414&cvid=qEJBBjkH83hX1gGwKX+S0A=="
-				   target="_blank">
-				<img class="Card_container_badge_img"
-					 src="./files/img/certifications/az900.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="AZ-900"
-					href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=414&cvid=qEJBBjkH83hX1gGwKX+S0A=="
-					target="_blank">Microsoft Azure Fundamentals (AZ-900)</a><br>
-				</div>
-			</div>
-
-			<div class="Card_container_badge">
-				<a title="Oscilloscopes"
-				   href="https://www.credly.com/badges/dae6dcf5-4327-4e04-9c09-945742702f48/public_url"
-				   target="_blank">
-				   <img class="Card_container_badge_img"
-						src="./files/img/certifications/boot_camp_oscilloscopes.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="Boot Camp - Oscilloscopes"
-					href="https://www.credly.com/badges/dae6dcf5-4327-4e04-9c09-945742702f48/public_url"
-					target="_blank">Boot Camp - Oscilloscopes</a><br>
-				</div>
-			</div>
-
-			<div class="Card_container_badge">
-				<a title="Automated Testing for High-Speed Digital Standards"
-				   href="https://www.credly.com/badges/a313c004-1e75-4856-8a3c-dbe6c83a5f9d/public_url"
-				   target="_blank">
-				   <img class="Card_container_badge_img"
-						src="./files/img/certifications/bootcamp_testing_hs.png"></a>
-				<div class="Card_container_badge_info">
-					<a title="Boot Camp - Automated Testing for High-Speed Digital Standards"
-					href="https://www.credly.com/badges/a313c004-1e75-4856-8a3c-dbe6c83a5f9d/public_url"
-					target="_blank">Boot Camp - Automated Testing for High-Speed Digital Standards</a>
-				</div>
-			</div>
-		</div>
-		
+		</section>
 
 		<div class="BackgroundAttrib_container">
 			<div class="BackgroundAttrib_text">
 				<a href="https://www.freepik.com/free-vector/futuristic-technological-wallpaper_10987658.htm" target="_blank">Image by coolvector</a>
 			</div>
 		</div>
-
-		<script src="./files/scripts/script.js"></script>
 	</body>
 </html>
