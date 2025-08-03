@@ -54,66 +54,123 @@
 	</header>
 
 	<body>
-		<section id="AboutMe" class="Section_header_text">
-			<h1>About Me</h1>
-			<p>Ingeniero de ideas, hacker de la curiosidad. Diseño soluciones inteligentes desde sensores hasta sistemas embebidos.</p>
+		<section id="AboutMe" class="Section_container">
+			<p class="Section_container_header">About Me</p>
+			<p>Engineering solutions.</p>
 		</section>
 
-		<section id="Projects" class="Section_header_text">
-			<h2>My Projects</h2>
+		<section id="Projects" class="Section_container">
+			<p class="Section_container_header">My Projects</p>
 
-			<div class="card">
-				<img src="./img/intel/intel_nidaq.png" class="Card_container_img" alt="Intel logo + NI tools">
-				<h3>Intel - Custom Signal Acquisition Suite for Server System Validation with National Instruments tools</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/intel/intel_nidaq.png" class="Card_img" alt="Intel logo + NI tools">
+				<p class="Card_header">Intel - Custom Signal Acquisition Suite for Server System Validation with National Instruments tools</p>
+				<p class="Card_text">
+					As a System Validation Associate at Intel Corporation, I developed a custom signal acquisition suite to support server system validation.<br><br>
+					Using National Instruments hardware and software, this solution enabled data capture for different test cases, offering scalability in the number of input channels
+					and delivering higher resolution data than oscilloscopes (in most cases).<br><br>
+
+					Developing it with Python allowed integration with an existing automation framework, reducing time and minimizing issues related to manual intervetion.
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/ford/ford-protocols.png" class="Card_container_img" alt="Ford logo + CAN logo + lin frame">
-				<h3>Ford - CAN, CANFD and LIN custom tool development</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/ford/ford-protocols.png" class="Card_img" alt="Ford logo + CAN logo + lin frame">
+				<p class="Card_header">Ford - CAN, CANFD and LIN custom analyzer tool development</p>
+				<p class="Card_text">
+					During my time at Capgemini Engineering, collaborating as consultant for Ford, I developed custom drivers for automotive
+					communication protocols integrated with Embedded Linux, aiming to enable low-cost and scalable testing environments for
+					CAN Classic, CAN FD and LIN buses.<br><br>
+					The development included the analysis for integration with existing tools and frameworks, delivering a software layer
+					closer to hardware.
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/ford/ford-platform.png" class="Card_container_img" alt="Ford logo + Architecture diagram">
-				<h3>Ford - Custom platform for Automotive testing</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/ford/ford-platform.png" class="Card_img" alt="Ford logo + Architecture diagram">
+				<p class="Card_header">Ford - Custom platform for Automotive testing</p>
+				<p class="Card_text">
+					During my time at Capgemini Engineering, collaborating as consultant for Ford, I designed the architecture for a scalable
+					and modular automotive testing platform. The solution sought to standardize a kind of manual testing, adopting mechanisms from
+					other platforms like System Description Files and tailoring very specific modules for different test cases.<br><br>
+					Most of work lied in the software architecture, bridging testing frameworks with the hardware, so modeling the layers for enabling
+					scalability and maintanibility was a very important and detailed part. Applying OOP concepts aligned the solution with modern software
+					design.
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/bodePlotter/bodePlotter.jpg" class="Card_container_img" alt="Oscilloscope and signal generator">
-				<h3>Bode Plotter</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/bodePlotter/bodePlotter.jpg" class="Card_img" alt="Oscilloscope and signal generator">
+				<p class="Card_header">Bode Plotter. Frequency Response Analyzer with Python-based instrument control</p>
+				<p class="Card_text">
+					Developed a tool for Bode plot visualization using a Rigol DS1054Z Oscilloscope and FY3224S signal generator, enabling automated frequency
+					response analysys of analog circuits. The system injects sine waves across a frequency sweep and measures input/output signals to derive
+					amplitude and phase characteristics.<br><br>
+					The Python scripts automates frequency stepping, data acquisition, log and plot generation (using pyvisa, pandas and matplotlib).<br><br>
+					For improving user experience, I developed a simple GUI for selecting instruments, set the analysis parameters and show/save results
+					(used Tkinter).<br><br>
+					This is an Open Source project hosted on GitHub:
+					<a href="https://github.com/ailr16/BodePlot-DS1054Z" target="_blank">
+						BodePlot-DS1054Z
+					</a>
+				</p>
+				
 			</div>
 
-			<div class="card">
-				<img src="./img/inmoov/inmoovHand.jpg" class="Card_container_img" alt="InMoov + Neurosky">
-				<h3>InMoov & Neurosky Mindwave</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/inmoov/inmoovHand.jpg" class="Card_img" alt="InMoov + Neurosky">
+				<p class="Card_header">Robotic Hand controlled by EEG - Arduino Interface with NeuroSky Mindwave</p>
+				<p class="Card_text">
+					This was conceived as a highg school project to explore interesting control methods for robotic systems., this initiative led to the development
+					of an EEG-controlled 3d-printed robotic hand (InMoov) using a Neurosky Mindwave bluetooth headset. The system interprets concentration levels and
+					maps them to gesture commands with servo motors.<br><br>
+					This was published on GitHub and YouTube, which supported other student projects using the same setup (headset and inmoov hand).<br><br>
+					Later developed a custom Arduino API to simplify EEG data acquisition/integration, and released as open-source on GitHub:
+					<a href="https://github.com/ailr16/mindwave-arduino-tools" target="_blank">
+						mindwave-arduino-tools
+					</a><br><br>
+					I found a reference to this repo in a Medium article related to the headset:
+					<a href="https://medium.com/@me.muhammed.dinc/my-experience-with-mindwave-mobile-2-b8a5682b1db0" target="_blank">
+						My experience with Mindwave Mobile 2
+					</a>
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/pollutionMonitor/pollutionMonitor.png" class="Card_container_img" alt="Air pollution monitor">
-				<h3>Smart Pollution Monitor (Final Degree Project)</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/pollutionMonitor/pollutionMonitor.png" class="Card_img" alt="Air pollution monitor">
+				<p class="Card_header">Smart Pollution Monitor (Final Degree Project)</p>
+				<p class="Card_text">
+					Designed as a capstone engineering thesis, this project aimed to develop a low-cost, modular IoT solution for real-time air quality monitoring in
+					urban environments. The system integrates multiple sensors to measure pollutant levels such as PM2.5, PM10, CO and Sound pressure level. The system
+					is able to capture the current location for mounting it in mobile stations.<br><br>
+					The data logs are stored locally to publish them when Internet connection is available. This data is sent to a Thingspeak server enabling data
+					visualization in panels.<br><br>
+					This was a full cycle development, from planning to design the software architecture; selecting the sensors, SBC and LCD display; designing and building
+					some PCBs; designing and 3d printing a case considering factors as temperature and exposure to environment and finally structure the data for local and
+					remote visualization.
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/yocto/bootRpi.jpg" class="Card_container_img" alt="Raspberry Pi booting">
-				<h3>Yocto Layer for GUI implementation in Raspberry Pi</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/yocto/bootRpi.jpg" class="Card_img" alt="Raspberry Pi booting">
+				<p class="Card_header">Yocto Layer for GUI implementation in Raspberry Pi</p>
+				<p class="Card_text">
+					Combina bioseñales con programación embebida en Arduino.
+				</p>
 			</div>
 
-			<div class="card">
-				<img src="./img/intel/intel_xeonD.png" class="Card_container_img" alt="Raspberry Pi booting">
-				<h3>Intel - Xeon D Validation</h3>
-				<p>Combina bioseñales con programación embebida en Arduino.</p>
+			<div class="Card">
+				<img src="./img/intel/intel_xeonD.png" class="Card_img" alt="Raspberry Pi booting">
+				<p class="Card_header">Intel - Xeon D Validation</p>
+				<p class="Card_text">
+					Combina bioseñales con programación embebida en Arduino.
+				</p>
 			</div>
 
 		</section>
 
-		<section id="ContactAndSocialMedia" class="Section_header_text">
-			<h2>Reach out</h2>
+		<section id="ContactAndSocialMedia" class="Section_container">
+			<p class="Section_container_header">Reach out</p>
 			<div class="card">
 				<img src="inmoov.jpg" alt="InMoov + Neurosky">
 				<h3>Control mental de brazo robótico</h3>

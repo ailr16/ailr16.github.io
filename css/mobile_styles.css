@@ -3,64 +3,18 @@
 /* Profile section */
 
 @media only screen and (orientation:portrait){
-    .Card_container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        margin-bottom: 18vh;
-        position: relative;
+    .Card {
+        margin-bottom: 1vh;
     }
 
-    .Card_container_longer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        margin-bottom: 28vh;
-        position: relative;
+    .Card_header {
+        font-weight: bold;
+        width: 72%;
     }
-
-    .Card_container_longer_longer {
-        width: 100%;
-        height: auto;
-        display: flex;
-        margin-bottom: 38vh;
-        position: relative;
-     }
       
-    .Card_container_img{
+    .Card_img{
         width: 39vh;
         height: 22vh;
         position: relative;
-    }
-      
-    .Card_container_text{
-        width: 100%;
-        position: absolute;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2vh;
-        top: 21vh;
-        padding-left: 1vh;
-        padding-right: 1vh;
-    }
-
-    .Card_container_badge {
-        color: #4a544c;
-        height: 16vh;
-        position: relative;
-        left: 23vw;
-        margin-bottom: 4vh;
-        display: flex;
-    }
-      
-    .Card_container_badge_info{
-        width: 40%;
-        display: inline;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-style: italic;
-        font-size: 2vh;
-        padding-left: 4vw;
-        text-align: left;
-        padding-right: 1vh;
-        padding-top: 5vh;
     }
 }
