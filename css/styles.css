@@ -3,8 +3,7 @@
 */
 
 /******** General Styles (Applies for all pages) ********/
-.html,
-body {
+.html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin-left: auto;
@@ -32,6 +31,13 @@ a {
   height: 3vh;
 }
 
+/* MX flag gif */
+.Earth_gif {
+  position: relative;
+  height: 32vh;
+  margin-top: -3vh;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -46,6 +52,33 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #55555588;
+}
+
+hr {
+  border-width: 1px;
+  margin-top: -1vh;
+}
+
+.Navigation_downArrow {
+    margin-top: -1vh;
+    font-size: 8vh;
+    color: rgb(240, 240, 240);
+}
+
+.Navigation_upArrow_topText {
+    margin-top: -1vh;
+    font-size: 2vh;
+    color: rgb(240, 240, 240);
+}
+
+.Navigation_downArrow a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+.Navigation_downArrow a:visited{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
 }
 /*******************************************************/
 
@@ -62,28 +95,29 @@ header {
 }
 
 /* Text style for name and job title */
-.Profile_container {
+.Header_profileContainer {
   width: 100%;
   margin-top: 1%;
   display: inline-block;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Profile image */
-.Profile_container_imgContainer {
+.profileContainer_imgContainer {
   flex-shrink: 0;
 }
 
-.Profile_container_imgContainer_img {
+.profileContainer_imgContainer_img {
   width: 18vh;
   border-radius: 50%;
 }
 
-.Profile_container_id {
-  margin-top: -3vh;
+.profileContainer_nameCareer {
+  margin-top: -3.2vh;
 }
 
-.Profile_container_id_name {
+.profileContainer_name {
   color: #eeeeee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -91,7 +125,7 @@ header {
   font-weight: bold;
 }
 
-.Profile_container_id_career {
+.profileContainer_career {
   color: #eeeeee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
@@ -99,16 +133,56 @@ header {
   margin-top: -3vh;
 }
 
-.Profile_container_contactAndMedia {
+.profileContainer_landing {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin-top: -3.4vh; 
-  margin-bottom: 2vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.Profile_container_contactAndMedia_content_icon {
-  height: 2.8vh;
-  display: inline-block;
+.profileContainer_landing_text {
+  font-size: 2.2vh;
 }
+
+.profileContainer_menu {
+  margin-top: -2vh;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profileContainer_menu_text {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2vh;
+  margin-top: vh;
+}
+
+.profileContainer_menu_nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -0.3vh;
+  margin-bottom: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.9vh;
+}
+
+.profileContainer_menu_nav a{
+  color: #eeeeee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-top: -2vh;
+}
+
+.profileContainer_menu_nav hover{
+  color: #b41e1eff;
+}
+
 
 .Profile_container_summary {
   color: #eeeeee;
@@ -117,15 +191,30 @@ header {
   font-size: 2vh;
 }
 
-/*******************************************************/
+/*******************Contact icons***********************/
+.Contact_icon {
+  height: 6vh;
+  display: inline-block;
+  margin-top: 3vh;
+}
 
-.Section_header_text {
+/*******************Section containers***********************/
+.Section_container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.2vh;
-  font-style: italic;
   color: #eeeeee;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Section_container_header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.6vh;
+  font-style: normal;
+  font-weight: bold;
+  color: #eeeeee;
 }
 
 .AboutMe_header {
@@ -226,92 +315,82 @@ header {
   transition: max-height 0.3s ease-out;
 }
 
-.Card_container {
-  width: 100%;
+/********************Cards***********************/
+.Card {
+  width: 80%;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3vh;
+  text-align: center;
+  background-color: #4949495d;
+  border-radius: 4%;
 }
 
-.Card_container_longer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3vh;
+.Card:hover {
+    background-color: #6363635d;
 }
 
-.Card_container_longer_longer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3vh;
+.Card_header {
+  font-weight: bold;
+  width: 40%;
 }
 
-.Card_container_img{
+.Card_img{
   width: 39vh;
   height: 22vh;
-  display:inline;
+  margin-bottom: 1.4vh;
+  border-radius: 10%;
 }
 
-.Card_container_text{
-  width: 40%;
+.Card_text{
+  width: 60%;
   display: inline;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2vh;
-  padding-left: 1vh;
-  padding-right: 1vh;
+  margin-top: -0.5vh;
 }
 
-.Card_container_vid{
-  position: relative;
-  width: 39vh;
-  height: 22vh;
+.Card_withDescription {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+    text-align: center;
+    background-color: #4949495d;
+    border-radius: 4%;
 }
 
-.Card_container_vid iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.Card_description {
+    width: 60%;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
 }
 
-.Card_container_badge {
-  color: #4a544c;
-  height: 16vh;
-  position: relative;
-  left: 30%;
-  margin-bottom: 4vh;
-  display: flex;
+.Card_withDescription_img {
+    width: 39vh;
+    height: 22vh;
+    border-radius: 10%;
+    margin-top: 1vh;
 }
 
-.Card_container_badge_img {
-  color: #4a544c;
-  height: 16vh;
-  position: relative;  
-  display: flex;
+.Card_video{
+    position: relative;
+    width: 42vh;
+    height: 24vh;
+    margin-top: 1vh;
 }
 
-.Card_container_text_info{
-  width: 40%;
-  display: inline;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 0.4vh;
-}
-
-.Card_container_badge_info{
-  width: 40%;
-  display: inline;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 0.4vh;
-  padding-top: 6.4vh;
+.Card_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ////// END profile header ////// */
@@ -327,7 +406,7 @@ header {
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 1vh;
+  font-size: 1.4vh;
   font-style: italic;
 }
 
