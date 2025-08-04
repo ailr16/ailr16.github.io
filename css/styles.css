@@ -3,8 +3,7 @@
 */
 
 /******** General Styles (Applies for all pages) ********/
-.html,
-body {
+.html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin-left: auto;
@@ -32,6 +31,13 @@ a {
   height: 3vh;
 }
 
+/* MX flag gif */
+.Earth_gif {
+  position: relative;
+  height: 32vh;
+  margin-top: -3vh;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -51,6 +57,22 @@ a {
 hr {
   border-width: 1px;
   margin-top: -1vh;
+}
+
+.Navigation_downArrow {
+    margin-top: -1vh;
+    font-size: 8vh;
+    color: rgb(240, 240, 240);
+}
+
+.Navigation_downArrow a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+.Navigation_downArrow a:visited{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
 }
 /*******************************************************/
 
@@ -155,22 +177,18 @@ header {
   color: #b41e1eff;
 }
 
-.Profile_container_contactAndMedia {
-  text-align: center;
-  margin-top: -3.4vh; 
-  margin-bottom: 2vh;
-}
-
-.Profile_container_contactAndMedia_content_icon {
-  height: 2.8vh;
-  display: inline-block;
-}
 
 .Profile_container_summary {
   color: #eeeeee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 2vh;
+}
+
+/*******************Contact icons***********************/
+.Contact_icon {
+  height: 6vh;
+  display: inline-block;
 }
 
 /*******************Section containers***********************/
@@ -305,6 +323,10 @@ header {
   border-radius: 4%;
 }
 
+.Card:hover {
+    background-color: #6363635d;
+}
+
 .Card_header {
   font-weight: bold;
   width: 40%;
@@ -352,7 +374,7 @@ header {
   color: #FFF;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  font-size: 1vh;
+  font-size: 1.4vh;
   font-style: italic;
 }
 

@@ -5,16 +5,33 @@
 @media only screen and (orientation:portrait){
     .Card {
         margin-bottom: 1vh;
+        width: 92%;
     }
 
     .Card_header {
         font-weight: bold;
-        width: 72%;
+        width: 84%;
+    }
+
+    .Card_text{
+        width: 96%;
     }
       
     .Card_img{
         width: 39vh;
         height: 22vh;
         position: relative;
+    }
+
+    .profileContainer_menu {
+        width: 96%;
+    }
+
+    .profileContainer_landing {
+        width: 88%;
+    }
+
+    .Contact_icon {
+        height: 4vh;
     }
 }
