@@ -65,6 +65,12 @@ hr {
     color: rgb(240, 240, 240);
 }
 
+.Navigation_upArrow_topText {
+    margin-top: -1vh;
+    font-size: 2vh;
+    color: rgb(240, 240, 240);
+}
+
 .Navigation_downArrow a{
     color: rgb(240, 240, 240);
     text-decoration: none;
@@ -189,6 +195,7 @@ header {
 .Contact_icon {
   height: 6vh;
   display: inline-block;
+  margin-top: 3vh;
 }
 
 /*******************Section containers***********************/
@@ -206,9 +213,8 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.6vh;
   font-style: normal;
+  font-weight: bold;
   color: #eeeeee;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
 }
 
 .AboutMe_header {
@@ -310,7 +316,6 @@ header {
 }
 
 /********************Cards***********************/
-
 .Card {
   width: 80%;
   height: auto;
@@ -347,18 +352,45 @@ header {
   margin-top: -0.5vh;
 }
 
+.Card_withDescription {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+    text-align: center;
+    background-color: #4949495d;
+    border-radius: 4%;
+}
+
+.Card_description {
+    width: 60%;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+}
+
+.Card_withDescription_img {
+    width: 39vh;
+    height: 22vh;
+    border-radius: 10%;
+    margin-top: 1vh;
+}
+
 .Card_video{
-  position: relative;
-  width: 39vh;
-  height: 22vh;
+    position: relative;
+    width: 42vh;
+    height: 24vh;
+    margin-top: 1vh;
 }
 
 .Card_video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* ////// END profile header ////// */
