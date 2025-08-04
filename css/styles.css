@@ -164,6 +164,9 @@ header {
   color: #eeeeee;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Section_container_header {
@@ -276,13 +279,15 @@ header {
 /********************Cards***********************/
 
 .Card {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 3vh;
   text-align: center;
+  background-color: #4949495d;
+  border-radius: 4%;
 }
 
 .Card_header {
@@ -293,6 +298,8 @@ header {
 .Card_img{
   width: 39vh;
   height: 22vh;
+  margin-bottom: 1.4vh;
+  border-radius: 10%;
 }
 
 .Card_text{
