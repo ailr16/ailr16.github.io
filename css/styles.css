@@ -71,7 +71,8 @@ header {
   width: 100%;
   margin-top: 1%;
   display: inline-block;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Profile image */
@@ -102,6 +103,20 @@ header {
   text-align: center;
   font-size: 2.2vh;
   margin-top: -3vh;
+}
+
+.profileContainer_landing {
+  color: #eeeeee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.profileContainer_landing_text {
+  font-size: 2.2vh;
 }
 
 .profileContainer_menu {
